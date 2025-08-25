@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Xue Han, University of Sydney, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  D:\Keli_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+D:\learn\PhD document\5514 tutorial materials\5514 lab 2023\Lab1 SerialComm 2023\Source Code\Lab1_Demo_Code\Projects\Multi\Applications\SensorDemo\MDK-ARM\STM32L053R8-Nucleo\SensorDemoProject.uvprojx
+Project File Date:  09/24/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keli_v5\ARM\ARMCC\Bin'
+Build target 'SensDemo_L053R8_NUCLEO'
+compiling sensor_service.c...
+..\..\Inc\sensor_service.h(49): error:  #5: cannot open source input file "bluenrg_gatt_server.h": No such file or directory
+  #include "bluenrg_gatt_server.h"
+..\..\Src\sensor_service.c: 0 warnings, 1 error
+compiling main.c...
+..\..\Inc\sensor_service.h(49): error:  #5: cannot open source input file "bluenrg_gatt_server.h": No such file or directory
+  #include "bluenrg_gatt_server.h"
+..\..\Src\main.c: 0 warnings, 1 error
+compiling bluenrg_interface.c...
+..\..\Src\bluenrg_interface.c(42): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include "ble_status.h"
+..\..\Src\bluenrg_interface.c: 0 warnings, 1 error
+compiling stm32xx_it.c...
+compiling stm32l0xx_hal_msp.c...
+compiling cube_hal_l0.c...
+compiling stm32_bluenrg_ble.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\gp_timer.h(20): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include "ble_status.h"
+..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB0xA1\stm32_bluenrg_ble.c: 0 warnings, 1 error
+compiling stm32l0xx_nucleo.c...
+compiling system_stm32l0xx.c...
+compiling stm32l0xx_hal.c...
+compiling stm32l0xx_hal_adc_ex.c...
+compiling stm32l0xx_hal_cortex.c...
+compiling stm32l0xx_hal_adc.c...
+compiling stm32l0xx_hal_flash.c...
+compiling stm32l0xx_hal_dma.c...
+compiling stm32l0xx_hal_flash_ex.c...
+compiling stm32l0xx_hal_gpio.c...
+compiling stm32l0xx_hal_pwr.c...
+compiling stm32l0xx_hal_pwr_ex.c...
+compiling hci.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c(21): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include "ble_status.h"
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c: 0 warnings, 1 error
+compiling hci_le.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci_le.c(21): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include "ble_status.h"
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci_le.c: 0 warnings, 1 error
+compiling bluenrg_gap_aci.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gap_aci.c": No such file or directory
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gap_aci.c: 0 warnings, 1 error
+compiling bluenrg_gatt_aci.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c": No such file or directory
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c: 0 warnings, 1 error
+compiling stm32l0xx_hal_rcc_ex.c...
+compiling bluenrg_l2cap_aci.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_l2cap_aci.c": No such file or directory
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_l2cap_aci.c: 0 warnings, 1 error
+compiling bluenrg_hal_aci.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hal_aci.c": No such file or directory
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hal_aci.c: 0 warnings, 1 error
+compiling bluenrg_utils_small.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils_small.c": No such file or directory
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils_small.c: 0 warnings, 1 error
+compiling stm32l0xx_hal_rcc.c...
+compiling osal.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h(24): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include <ble_status.h>
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\osal.c: 0 warnings, 1 error
+compiling gp_timer.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\gp_timer.h(20): error:  #5: cannot open source input file "ble_status.h": No such file or directory
+  #include "ble_status.h"
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\gp_timer.c: 0 warnings, 1 error
+compiling bluenrg_itf.c...
+compiling stm32l0xx_hal_spi.c...
+compiling ble_list.c...
+".\SensorDemoProject.axf" - 13 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.0.1.pack
+                Keil.STM32L0xx_DFP.2.0.1
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
