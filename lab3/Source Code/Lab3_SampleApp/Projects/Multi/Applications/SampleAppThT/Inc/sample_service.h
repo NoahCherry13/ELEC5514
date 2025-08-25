@@ -103,6 +103,7 @@
  *  @{
  */
 tBleStatus Add_Sample_Service(void);
+tBleStatus Add_Custom_Service(void);
 void Make_Connection(void);
 void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes);
 void sendData(uint8_t* data_buffer, uint8_t Nb_bytes);

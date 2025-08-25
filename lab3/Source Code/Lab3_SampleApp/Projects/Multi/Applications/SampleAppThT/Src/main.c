@@ -191,9 +191,9 @@ void vcom_init(void)
  */
 int main(void)
 { 
-	const char *name = "BlueNRG";
-  uint8_t CLIENT_BDADDR[] = {0xbb, 0x00, 0x00, 0xE1, 0x80, 0x02};
-  uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02};
+	const char *name = "Dev1";
+  uint8_t CLIENT_BDADDR[] = {0x03, 0x80, 0xE1, 0x01, 0x33, 0xF1};
+  uint8_t SERVER_BDADDR[] = {0x03, 0x80, 0xE1, 0x01, 0x33, 0xF1};
   uint8_t bdaddr[BDADDR_SIZE];
   uint16_t service_handle, dev_name_char_handle, appearance_char_handle;
   
@@ -320,6 +320,13 @@ int main(void)
       PRINTF("Service added successfully.\n");
     else
       PRINTF("Error while adding service.\n");
+		
+		ret = Add_Custom_Service();  //Call the function to add service
+    
+    if(ret == BLE_STATUS_SUCCESS)
+      PRINTF("Custom Service added successfully.\n");
+    else
+      PRINTF("Error while adding Custom service.\n");
     
   } else {
     PRINTF("CLIENT: BLE Stack Initialized\n");

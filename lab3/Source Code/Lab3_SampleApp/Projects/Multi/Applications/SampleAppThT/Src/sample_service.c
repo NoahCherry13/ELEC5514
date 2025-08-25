@@ -67,6 +67,7 @@ uint16_t tx_handle;
 uint16_t rx_handle;
 
 uint16_t sampleServHandle, TXCharHandle, RXCharHandle;
+uint16_t customServHandle, CustTXHandle, CustRXHandle;
 
 extern uint8_t bnrg_expansion_board;
 extern BLE_RoleTypeDef BLE_Role;
@@ -103,10 +104,10 @@ extern uint8_t throughput_test;
 tBleStatus Add_Sample_Service(void)
 {
   tBleStatus ret; 
-  
-  const uint8_t service_uuid[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe0,0xf2,0x73,0xd7}; //Service
-  const uint8_t charUuidTX[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe1,0xf2,0x73,0xd8}; //Characteristics
-  const uint8_t charUuidRX[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe2,0xf2,0x73,0xd9};
+	
+  const uint8_t service_uuid[16] = {0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa}; //Service
+  const uint8_t charUuidTX[16] = {0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
+  const uint8_t charUuidRX[16] = {0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
   
   ret = aci_gatt_add_serv(UUID_TYPE_128, service_uuid, PRIMARY_SERVICE, 7, &sampleServHandle);
   if (ret != BLE_STATUS_SUCCESS) goto fail;    
@@ -124,6 +125,41 @@ tBleStatus Add_Sample_Service(void)
   
 fail:
   PRINTF("Error while adding Sample Service.\n");
+  return BLE_STATUS_ERROR ;
+}
+
+/** @defgroup SAMPLE_SERVICE_Exported_Functions 
+ * @{
+ */ 
+/**
+ * @brief  Add a sample service using a vendor specific profile
+ * @param  None
+ * @retval Status
+ */
+tBleStatus Add_Custom_Service(void)
+{
+  tBleStatus ret; 
+	
+  const uint8_t service_uuid[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5d}; //Service
+  const uint8_t charUuidTX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
+  const uint8_t charUuidRX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
+  
+  ret = aci_gatt_add_serv(UUID_TYPE_128, service_uuid, PRIMARY_SERVICE, 7, &customServHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;    
+  
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidTX, 20, CHAR_PROP_NOTIFY, ATTR_PERMISSION_NONE, 0,
+                           16, 1, &CustTXHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+  
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidRX, 20, CHAR_PROP_WRITE|CHAR_PROP_WRITE_WITHOUT_RESP, ATTR_PERMISSION_NONE, GATT_NOTIFY_ATTRIBUTE_WRITE,
+                           16, 1, &CustRXHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+  
+  PRINTF("Custom Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", TXCharHandle, RXCharHandle);
+  return BLE_STATUS_SUCCESS; 
+  
+fail:
+  PRINTF("Error while adding Custom Service.\n");
   return BLE_STATUS_ERROR ;
 }
 
@@ -157,7 +193,7 @@ void Make_Connection(void)
     
   } else  {
     
-    const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','l','u','e','N','R','G','_','C','h','a','t'}; //Change local name as your group number
+    const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','L','E','_','L','O','C','_','G','1'}; //Change local name as your group number
     
     /* disable scan response */
     hci_le_set_scan_resp_data(0,NULL);
@@ -222,6 +258,30 @@ void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
   for(int i = 0; i < Nb_bytes; i++) {
     PRINTF("%c", data_buffer[i]);		
   }
+}
+
+void lightSwitch(uint8_t* data_buffer, uint8_t Nb_bytes)
+{
+	if (!strcmp((char*) data_buffer, "1"))
+	{
+		BSP_LED_On(LED2);
+	}
+	else if (!strcmp((char*) data_buffer, "2"))
+	{
+		BSP_LED_Off(LED2);
+	} else {
+		for(int i = 0; i < Nb_bytes; i++) {
+			PRINTF("%c", data_buffer[i]);		
+		}
+	}
+	
+	for(int i = 0; i < Nb_bytes; i++) {
+    PRINTF("%d", strcmp((char*) data_buffer, "2"));		
+  }
+	
+	memcpy(data_buffer, 0, Nb_bytes);
+
+		
 }
 
 /**
@@ -311,6 +371,10 @@ void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_da
 	{
 		receiveData(att_data, data_length);
   } 
+	if (handle == CustRXHandle + 1)
+	{
+		lightSwitch(att_data, data_length);
+	}
 	else if (handle == TXCharHandle + 1) //Check is this the TX Handle of your service?
 	{        
     if(att_data[0] == 0x01)
