@@ -62,30 +62,29 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
 	/* USER CODE BEGIN*/
-  const int rxbuff_size = 4;
+  const int rxbuff_size = 16;
 	uint8_t message[rxbuff_size];
 	uint8_t james[] = "James\n";
 	uint8_t noah[] = "Noah\n";
 	uint8_t lucas[] = "Lucas\n";
-	
+	uint8_t return_char = '\n';
 	/* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 		/* USER CODE END WHILE */
-		HAL_UART_Receive(&huart2, message, rxbuff_size, 1000);
-		switch (message[0]) {
-			case 49:
-				HAL_UART_Transmit(&huart2, james, 6, 1000);
-				break;
-			case 50:
-				HAL_UART_Transmit(&huart2, noah, 5, 1000);
-				break;
-			case 51:
-				HAL_UART_Transmit(&huart2, lucas, 6, 1000);
-				break;
-			default:
-				HAL_UART_Transmit(&huart2, message, rxbuff_size, 1000);
+		HAL_UART_Receive(&huart2, message, rxbuff_size, 100);
+		if (!strcmp((char*)message, "1")){
+			HAL_UART_Transmit(&huart2, james, 6, 100);
+		}else if(!strcmp((char*)message, "2")){
+			HAL_UART_Transmit(&huart2, noah, 5, 100);			
+		}else if(!strcmp((char*)message, "3")){
+			HAL_UART_Transmit(&huart2, lucas, 6, 100);			
+		}else if(!strcmp((char*)message, "")){
+			continue;		
+		}else{
+			HAL_UART_Transmit(&huart2, message, rxbuff_size, 100);
+			HAL_UART_Transmit(&huart2, &return_char, 1, 100);			
 		}
 		memset(message, 0, rxbuff_size);
   }
