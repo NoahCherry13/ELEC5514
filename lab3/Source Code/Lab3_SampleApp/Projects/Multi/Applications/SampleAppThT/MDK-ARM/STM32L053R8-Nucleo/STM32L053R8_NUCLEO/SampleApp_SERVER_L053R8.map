@@ -101,11 +101,9 @@ Section Cross References
     sample_service.o(i.enableNotification) refers to gp_timer.o(i.Timer_Expired) for Timer_Expired
     sample_service.o(i.enableNotification) refers to bluenrg_gatt_aci.o(i.aci_gatt_write_charac_descriptor) for aci_gatt_write_charac_descriptor
     sample_service.o(i.enableNotification) refers to sample_service.o(.data) for .data
-    sample_service.o(i.lightSwitch) refers to strcmp.o(.text) for strcmp
-    sample_service.o(i.lightSwitch) refers to stm32l0xx_nucleo.o(i.BSP_LED_On) for BSP_LED_On
     sample_service.o(i.lightSwitch) refers to stm32l0xx_nucleo.o(i.BSP_LED_Off) for BSP_LED_Off
+    sample_service.o(i.lightSwitch) refers to stm32l0xx_nucleo.o(i.BSP_LED_On) for BSP_LED_On
     sample_service.o(i.lightSwitch) refers to uart_support.o(i.PRINT_MESG_UART) for PRINT_MESG_UART
-    sample_service.o(i.lightSwitch) refers to memcpy.o(.text) for __aeabi_memcpy
     sample_service.o(i.receiveData) refers to stm32l0xx_nucleo.o(i.BSP_LED_Toggle) for BSP_LED_Toggle
     sample_service.o(i.receiveData) refers to uart_support.o(i.PRINT_MESG_UART) for PRINT_MESG_UART
     sample_service.o(i.sendData) refers to bluenrg_gatt_aci.o(i.aci_gatt_write_without_response) for aci_gatt_write_without_response
@@ -1486,45 +1484,44 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
     ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyc.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpy.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
-    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyc.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memset.o ABSOLUTE
-    ../clib/microlib/string/strcmp.c         0x00000000   Number         0  strcmp.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
-    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/unhosted.c              0x00000000   Number         0  uwrite4.o ABSOLUTE
     ../clib/microlib/unhosted.c              0x00000000   Number         0  uread4.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
-    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
-    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
@@ -1623,162 +1620,161 @@ Image Symbol Table
     .text                                    0x08000180   Section        0  memcpy.o(.text)
     .text                                    0x080001a8   Section        0  memseta.o(.text)
     .text                                    0x080001cc   Section        0  strlen.o(.text)
-    .text                                    0x080001da   Section        0  strcmp.o(.text)
-    .text                                    0x080001f6   Section        0  uwrite4.o(.text)
-    .text                                    0x08000208   Section        0  fdiv.o(.text)
-    .text                                    0x08000284   Section        0  ffltui.o(.text)
-    .text                                    0x08000292   Section        0  ffixi.o(.text)
-    .text                                    0x080002c4   Section        0  llshl.o(.text)
-    .text                                    0x080002e4   Section        0  llushr.o(.text)
-    .text                                    0x08000306   Section        0  fepilogue.o(.text)
-    .text                                    0x08000306   Section        0  iusefp.o(.text)
-    .text                                    0x08000388   Section        0  dadd.o(.text)
-    .text                                    0x080004f0   Section        0  dmul.o(.text)
-    .text                                    0x080005c0   Section        0  ddiv.o(.text)
-    .text                                    0x080006b0   Section        0  dfixul.o(.text)
-    .text                                    0x080006f0   Section       40  cdrcmple.o(.text)
-    .text                                    0x08000718   Section       36  init.o(.text)
-    .text                                    0x0800073c   Section        0  llsshr.o(.text)
-    .text                                    0x08000762   Section        0  depilogue.o(.text)
-    i.Add_Custom_Service                     0x08000820   Section        0  sample_service.o(i.Add_Custom_Service)
-    i.Add_Sample_Service                     0x08000948   Section        0  sample_service.o(i.Add_Sample_Service)
-    i.Attribute_Modified_CB                  0x08000a70   Section        0  sample_service.o(i.Attribute_Modified_CB)
-    i.BNRG_SPI_Init                          0x08000ab0   Section        0  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
-    i.BSP_LED_Init                           0x08000aec   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Init)
-    i.BSP_LED_Off                            0x08000b3c   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Off)
-    i.BSP_LED_On                             0x08000b5c   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_On)
-    i.BSP_LED_Toggle                         0x08000b7c   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
-    i.BSP_PB_GetState                        0x08000b98   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
-    i.BSP_PB_Init                            0x08000bb4   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_Init)
-    i.BlueNRG_DataPresent                    0x08000c28   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_DataPresent)
-    i.BlueNRG_RST                            0x08000c3c   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_RST)
-    i.BlueNRG_SPI_Read_All                   0x08000c68   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
-    i.BlueNRG_SPI_Write                      0x08000d00   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
-    i.Clear_SPI_EXTI_Flag                    0x08000da8   Section        0  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
-    i.Disable_SPI_IRQ                        0x08000db4   Section        0  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
-    i.EXTI0_1_IRQHandler                     0x08000dbe   Section        0  stm32xx_it.o(i.EXTI0_1_IRQHandler)
-    i.EXTI4_15_IRQHandler                    0x08000dc8   Section        0  stm32xx_it.o(i.EXTI4_15_IRQHandler)
-    i.Enable_SPI_IRQ                         0x08000de0   Section        0  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
-    i.Error_Handler                          0x08000dea   Section        0  main.o(i.Error_Handler)
-    i.GAP_ConnectionComplete_CB              0x08000df8   Section        0  sample_service.o(i.GAP_ConnectionComplete_CB)
-    i.GAP_DisconnectionComplete_CB           0x08000e50   Section        0  sample_service.o(i.GAP_DisconnectionComplete_CB)
-    i.GATT_Notification_CB                   0x08000e84   Section        0  sample_service.o(i.GATT_Notification_CB)
-    i.HAL_Delay                              0x08000fc8   Section        0  stm32l0xx_hal.o(i.HAL_Delay)
-    i.HAL_GPIO_EXTI_Callback                 0x08000fde   Section        0  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
-    i.HAL_GPIO_EXTI_IRQHandler               0x08000fe8   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
-    i.HAL_GPIO_Init                          0x08001000   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
-    i.HAL_GPIO_ReadPin                       0x08001178   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
-    i.HAL_GPIO_TogglePin                     0x08001182   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
-    i.HAL_GPIO_WritePin                      0x0800118a   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
-    i.HAL_GetTick                            0x08001198   Section        0  stm32l0xx_hal.o(i.HAL_GetTick)
-    i.HAL_IncTick                            0x080011a4   Section        0  stm32l0xx_hal.o(i.HAL_IncTick)
-    i.HAL_Init                               0x080011b4   Section        0  stm32l0xx_hal.o(i.HAL_Init)
-    i.HAL_InitTick                           0x080011d4   Section        0  stm32l0xx_hal.o(i.HAL_InitTick)
-    i.HAL_MspInit                            0x080011fc   Section        0  stm32l0xx_hal.o(i.HAL_MspInit)
-    i.HAL_NVIC_DisableIRQ                    0x08001200   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
-    i.HAL_NVIC_EnableIRQ                     0x08001214   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
-    i.HAL_NVIC_SetPriority                   0x08001228   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
-    i.HAL_RCCEx_GetPeriphCLKFreq             0x08001230   Section        0  stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq)
-    i.HAL_RCC_ClockConfig                    0x080013d4   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
-    i.HAL_RCC_GetPCLK1Freq                   0x0800153c   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq)
-    i.HAL_RCC_GetPCLK2Freq                   0x0800155c   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq)
-    i.HAL_RCC_GetSysClockFreq                0x0800157c   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
-    i.HAL_RCC_OscConfig                      0x080015f4   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
-    i.HAL_SPI_Init                           0x08001a46   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
-    i.HAL_SPI_MspInit                        0x08001acc   Section        0  stm32l0xx_hal_msp.o(i.HAL_SPI_MspInit)
-    i.HAL_SPI_TransmitReceive                0x08001bf0   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
-    i.HAL_SYSTICK_Config                     0x08001ea8   Section        0  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
-    i.HAL_UART_Init                          0x08001ed8   Section        0  stm32l0xx_hal_uart.o(i.HAL_UART_Init)
-    i.HAL_UART_MspInit                       0x08001f44   Section        0  main.o(i.HAL_UART_MspInit)
-    i.HAL_UART_Transmit                      0x08001f9c   Section        0  stm32l0xx_hal_uart.o(i.HAL_UART_Transmit)
-    i.HCI_Event_CB                           0x08002064   Section        0  sample_service.o(i.HCI_Event_CB)
-    i.HCI_Init                               0x080021d0   Section        0  hci.o(i.HCI_Init)
-    i.HCI_Isr                                0x08002204   Section        0  hci.o(i.HCI_Isr)
-    i.HCI_Process                            0x08002268   Section        0  hci.o(i.HCI_Process)
-    i.HCI_Queue_Empty                        0x080022b0   Section        0  hci.o(i.HCI_Queue_Empty)
-    i.HCI_verify                             0x080022c0   Section        0  hci.o(i.HCI_verify)
-    i.Hal_Write_Serial                       0x080022e2   Section        0  stm32_bluenrg_ble.o(i.Hal_Write_Serial)
-    i.HardFault_Handler                      0x08002310   Section        0  stm32xx_it.o(i.HardFault_Handler)
-    i.Make_Connection                        0x08002314   Section        0  sample_service.o(i.Make_Connection)
-    i.NMI_Handler                            0x08002424   Section        0  stm32xx_it.o(i.NMI_Handler)
-    i.NVIC_SetPriority                       0x08002428   Section        0  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
-    NVIC_SetPriority                         0x08002429   Thumb Code    60  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
-    i.Osal_MemCpy                            0x0800246c   Section        0  osal.o(i.Osal_MemCpy)
-    i.Osal_MemSet                            0x08002474   Section        0  osal.o(i.Osal_MemSet)
-    i.PRINT_MESG_UART                        0x0800247c   Section        0  uart_support.o(i.PRINT_MESG_UART)
-    i.PendSV_Handler                         0x080024b0   Section        0  stm32xx_it.o(i.PendSV_Handler)
-    i.RCC_SetFlashLatencyFromMSIRange        0x080024b4   Section        0  stm32l0xx_hal_rcc.o(i.RCC_SetFlashLatencyFromMSIRange)
-    RCC_SetFlashLatencyFromMSIRange          0x080024b5   Thumb Code    94  stm32l0xx_hal_rcc.o(i.RCC_SetFlashLatencyFromMSIRange)
-    i.SPI_WaitOnFlagUntilTimeout             0x08002524   Section        0  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
-    SPI_WaitOnFlagUntilTimeout               0x08002525   Thumb Code   178  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
-    i.SVC_Handler                            0x080025d6   Section        0  stm32xx_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x080025d8   Section        0  stm32xx_it.o(i.SysTick_Handler)
-    i.SystemClock_Config                     0x080025ec   Section        0  cube_hal_l0.o(i.SystemClock_Config)
-    i.SystemInit                             0x08002650   Section        0  system_stm32l0xx.o(i.SystemInit)
-    i.Timer_Expired                          0x080026a4   Section        0  gp_timer.o(i.Timer_Expired)
-    i.Timer_Set                              0x080026c0   Section        0  gp_timer.o(i.Timer_Set)
-    i.UART_AdvFeatureConfig                  0x080026ce   Section        0  stm32l0xx_hal_uart.o(i.UART_AdvFeatureConfig)
-    i.UART_CheckIdleState                    0x08002798   Section        0  stm32l0xx_hal_uart.o(i.UART_CheckIdleState)
-    i.UART_SetConfig                         0x080027f8   Section        0  stm32l0xx_hal_uart.o(i.UART_SetConfig)
-    i.UART_WaitOnFlagUntilTimeout            0x08002a14   Section        0  stm32l0xx_hal_uart.o(i.UART_WaitOnFlagUntilTimeout)
-    i.User_Process                           0x08002a78   Section        0  main.o(i.User_Process)
-    i.__0vsnprintf                           0x08002b44   Section        0  printfa.o(i.__0vsnprintf)
-    i.__ARM_clz                              0x08002b74   Section        0  depilogue.o(i.__ARM_clz)
-    i.__ARM_common_switch8                   0x08002ba2   Section        0  stm32l0xx_hal_uart.o(i.__ARM_common_switch8)
-    i.__scatterload_copy                     0x08002bbc   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08002bca   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08002bcc   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._fp_digits                             0x08002bdc   Section        0  printfa.o(i._fp_digits)
-    _fp_digits                               0x08002bdd   Thumb Code   344  printfa.o(i._fp_digits)
-    i._printf_core                           0x08002d50   Section        0  printfa.o(i._printf_core)
-    _printf_core                             0x08002d51   Thumb Code  1760  printfa.o(i._printf_core)
-    i._printf_post_padding                   0x08003440   Section        0  printfa.o(i._printf_post_padding)
-    _printf_post_padding                     0x08003441   Thumb Code    32  printfa.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x08003460   Section        0  printfa.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x08003461   Thumb Code    44  printfa.o(i._printf_pre_padding)
-    i._snputc                                0x0800348c   Section        0  printfa.o(i._snputc)
-    _snputc                                  0x0800348d   Thumb Code    22  printfa.o(i._snputc)
-    i.aci_gap_create_connection              0x080034a2   Section        0  bluenrg_gap_aci.o(i.aci_gap_create_connection)
-    i.aci_gap_init_IDB04A1                   0x08003514   Section        0  bluenrg_gap_aci.o(i.aci_gap_init_IDB04A1)
-    i.aci_gap_init_IDB05A1                   0x08003590   Section        0  bluenrg_gap_aci.o(i.aci_gap_init_IDB05A1)
-    i.aci_gap_set_auth_requirement           0x0800360e   Section        0  bluenrg_gap_aci.o(i.aci_gap_set_auth_requirement)
-    i.aci_gap_set_discoverable               0x08003682   Section        0  bluenrg_gap_aci.o(i.aci_gap_set_discoverable)
-    i.aci_gatt_add_char                      0x08003746   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_add_char)
-    i.aci_gatt_add_serv                      0x080037fc   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_add_serv)
-    i.aci_gatt_disc_charac_by_uuid           0x0800387c   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_disc_charac_by_uuid)
-    i.aci_gatt_init                          0x0800390c   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_init)
-    i.aci_gatt_update_char_value             0x08003944   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_update_char_value)
-    i.aci_gatt_write_charac_descriptor       0x080039c4   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_write_charac_descriptor)
-    i.aci_gatt_write_without_response        0x08003a44   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_write_without_response)
-    i.aci_hal_set_tx_power_level             0x08003aa4   Section        0  bluenrg_hal_aci.o(i.aci_hal_set_tx_power_level)
-    i.aci_hal_write_config_data              0x08003ae8   Section        0  bluenrg_hal_aci.o(i.aci_hal_write_config_data)
-    i.enableNotification                     0x08003b48   Section        0  sample_service.o(i.enableNotification)
-    i.getBlueNRGVersion                      0x08003b8c   Section        0  bluenrg_utils_small.o(i.getBlueNRGVersion)
-    i.hci_le_read_local_version              0x08003bde   Section        0  hci_le.o(i.hci_le_read_local_version)
-    i.hci_le_set_scan_resp_data              0x08003c60   Section        0  hci_le.o(i.hci_le_set_scan_resp_data)
-    i.hci_send_cmd                           0x08003cc2   Section        0  hci.o(i.hci_send_cmd)
-    i.hci_send_req                           0x08003cf4   Section        0  hci.o(i.hci_send_req)
-    i.hci_write                              0x08003e70   Section        0  hci.o(i.hci_write)
-    i.lightSwitch                            0x08003e78   Section        0  sample_service.o(i.lightSwitch)
-    i.list_get_size                          0x08003eec   Section        0  ble_list.o(i.list_get_size)
-    i.list_init_head                         0x08003f08   Section        0  ble_list.o(i.list_init_head)
-    i.list_insert_head                       0x08003f0e   Section        0  ble_list.o(i.list_insert_head)
-    i.list_insert_tail                       0x08003f26   Section        0  ble_list.o(i.list_insert_tail)
-    i.list_is_empty                          0x08003f3e   Section        0  ble_list.o(i.list_is_empty)
-    i.list_remove_head                       0x08003f56   Section        0  ble_list.o(i.list_remove_head)
-    i.list_remove_node                       0x08003f7a   Section        0  ble_list.o(i.list_remove_node)
-    i.list_remove_tail                       0x08003f90   Section        0  ble_list.o(i.list_remove_tail)
-    i.main                                   0x08003fb4   Section        0  main.o(i.main)
-    i.move_list                              0x08004294   Section        0  hci.o(i.move_list)
-    move_list                                0x08004295   Thumb Code    36  hci.o(i.move_list)
-    i.receiveData                            0x080042b8   Section        0  sample_service.o(i.receiveData)
-    i.sendData                               0x080042dc   Section        0  sample_service.o(i.sendData)
-    i.startReadRXCharHandle                  0x08004424   Section        0  sample_service.o(i.startReadRXCharHandle)
-    i.startReadTXCharHandle                  0x08004490   Section        0  sample_service.o(i.startReadTXCharHandle)
-    i.vcom_init                              0x080044fc   Section        0  main.o(i.vcom_init)
-    .constdata                               0x08004530   Section        6  stm32l0xx_nucleo.o(.constdata)
-    .constdata                               0x08004536   Section       25  system_stm32l0xx.o(.constdata)
-    .constdata                               0x0800454f   Section        8  system_stm32l0xx.o(.constdata)
+    .text                                    0x080001da   Section        0  uwrite4.o(.text)
+    .text                                    0x080001ec   Section        0  fdiv.o(.text)
+    .text                                    0x08000268   Section        0  ffltui.o(.text)
+    .text                                    0x08000276   Section        0  ffixi.o(.text)
+    .text                                    0x080002a8   Section        0  llshl.o(.text)
+    .text                                    0x080002c8   Section        0  llushr.o(.text)
+    .text                                    0x080002ea   Section        0  fepilogue.o(.text)
+    .text                                    0x080002ea   Section        0  iusefp.o(.text)
+    .text                                    0x0800036c   Section        0  dadd.o(.text)
+    .text                                    0x080004d4   Section        0  dmul.o(.text)
+    .text                                    0x080005a4   Section        0  ddiv.o(.text)
+    .text                                    0x08000694   Section        0  dfixul.o(.text)
+    .text                                    0x080006d4   Section       40  cdrcmple.o(.text)
+    .text                                    0x080006fc   Section       36  init.o(.text)
+    .text                                    0x08000720   Section        0  llsshr.o(.text)
+    .text                                    0x08000746   Section        0  depilogue.o(.text)
+    i.Add_Custom_Service                     0x08000804   Section        0  sample_service.o(i.Add_Custom_Service)
+    i.Add_Sample_Service                     0x0800092c   Section        0  sample_service.o(i.Add_Sample_Service)
+    i.Attribute_Modified_CB                  0x08000a54   Section        0  sample_service.o(i.Attribute_Modified_CB)
+    i.BNRG_SPI_Init                          0x08000a94   Section        0  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
+    i.BSP_LED_Init                           0x08000ad0   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Init)
+    i.BSP_LED_Off                            0x08000b20   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Off)
+    i.BSP_LED_On                             0x08000b40   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_On)
+    i.BSP_LED_Toggle                         0x08000b60   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
+    i.BSP_PB_GetState                        0x08000b7c   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
+    i.BSP_PB_Init                            0x08000b98   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_Init)
+    i.BlueNRG_DataPresent                    0x08000c0c   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_DataPresent)
+    i.BlueNRG_RST                            0x08000c20   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_RST)
+    i.BlueNRG_SPI_Read_All                   0x08000c4c   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
+    i.BlueNRG_SPI_Write                      0x08000ce4   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
+    i.Clear_SPI_EXTI_Flag                    0x08000d8c   Section        0  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
+    i.Disable_SPI_IRQ                        0x08000d98   Section        0  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
+    i.EXTI0_1_IRQHandler                     0x08000da2   Section        0  stm32xx_it.o(i.EXTI0_1_IRQHandler)
+    i.EXTI4_15_IRQHandler                    0x08000dac   Section        0  stm32xx_it.o(i.EXTI4_15_IRQHandler)
+    i.Enable_SPI_IRQ                         0x08000dc4   Section        0  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
+    i.Error_Handler                          0x08000dce   Section        0  main.o(i.Error_Handler)
+    i.GAP_ConnectionComplete_CB              0x08000ddc   Section        0  sample_service.o(i.GAP_ConnectionComplete_CB)
+    i.GAP_DisconnectionComplete_CB           0x08000e34   Section        0  sample_service.o(i.GAP_DisconnectionComplete_CB)
+    i.GATT_Notification_CB                   0x08000e68   Section        0  sample_service.o(i.GATT_Notification_CB)
+    i.HAL_Delay                              0x08000fac   Section        0  stm32l0xx_hal.o(i.HAL_Delay)
+    i.HAL_GPIO_EXTI_Callback                 0x08000fc2   Section        0  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
+    i.HAL_GPIO_EXTI_IRQHandler               0x08000fcc   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
+    i.HAL_GPIO_Init                          0x08000fe4   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
+    i.HAL_GPIO_ReadPin                       0x0800115c   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
+    i.HAL_GPIO_TogglePin                     0x08001166   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
+    i.HAL_GPIO_WritePin                      0x0800116e   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
+    i.HAL_GetTick                            0x0800117c   Section        0  stm32l0xx_hal.o(i.HAL_GetTick)
+    i.HAL_IncTick                            0x08001188   Section        0  stm32l0xx_hal.o(i.HAL_IncTick)
+    i.HAL_Init                               0x08001198   Section        0  stm32l0xx_hal.o(i.HAL_Init)
+    i.HAL_InitTick                           0x080011b8   Section        0  stm32l0xx_hal.o(i.HAL_InitTick)
+    i.HAL_MspInit                            0x080011e0   Section        0  stm32l0xx_hal.o(i.HAL_MspInit)
+    i.HAL_NVIC_DisableIRQ                    0x080011e4   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
+    i.HAL_NVIC_EnableIRQ                     0x080011f8   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
+    i.HAL_NVIC_SetPriority                   0x0800120c   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
+    i.HAL_RCCEx_GetPeriphCLKFreq             0x08001214   Section        0  stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq)
+    i.HAL_RCC_ClockConfig                    0x080013b8   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
+    i.HAL_RCC_GetPCLK1Freq                   0x08001520   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq)
+    i.HAL_RCC_GetPCLK2Freq                   0x08001540   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq)
+    i.HAL_RCC_GetSysClockFreq                0x08001560   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
+    i.HAL_RCC_OscConfig                      0x080015d8   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
+    i.HAL_SPI_Init                           0x08001a2a   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
+    i.HAL_SPI_MspInit                        0x08001ab0   Section        0  stm32l0xx_hal_msp.o(i.HAL_SPI_MspInit)
+    i.HAL_SPI_TransmitReceive                0x08001bd4   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
+    i.HAL_SYSTICK_Config                     0x08001e8c   Section        0  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
+    i.HAL_UART_Init                          0x08001ebc   Section        0  stm32l0xx_hal_uart.o(i.HAL_UART_Init)
+    i.HAL_UART_MspInit                       0x08001f28   Section        0  main.o(i.HAL_UART_MspInit)
+    i.HAL_UART_Transmit                      0x08001f80   Section        0  stm32l0xx_hal_uart.o(i.HAL_UART_Transmit)
+    i.HCI_Event_CB                           0x08002048   Section        0  sample_service.o(i.HCI_Event_CB)
+    i.HCI_Init                               0x080021b4   Section        0  hci.o(i.HCI_Init)
+    i.HCI_Isr                                0x080021e8   Section        0  hci.o(i.HCI_Isr)
+    i.HCI_Process                            0x0800224c   Section        0  hci.o(i.HCI_Process)
+    i.HCI_Queue_Empty                        0x08002294   Section        0  hci.o(i.HCI_Queue_Empty)
+    i.HCI_verify                             0x080022a4   Section        0  hci.o(i.HCI_verify)
+    i.Hal_Write_Serial                       0x080022c6   Section        0  stm32_bluenrg_ble.o(i.Hal_Write_Serial)
+    i.HardFault_Handler                      0x080022f4   Section        0  stm32xx_it.o(i.HardFault_Handler)
+    i.Make_Connection                        0x080022f8   Section        0  sample_service.o(i.Make_Connection)
+    i.NMI_Handler                            0x08002408   Section        0  stm32xx_it.o(i.NMI_Handler)
+    i.NVIC_SetPriority                       0x0800240c   Section        0  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x0800240d   Thumb Code    60  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
+    i.Osal_MemCpy                            0x08002450   Section        0  osal.o(i.Osal_MemCpy)
+    i.Osal_MemSet                            0x08002458   Section        0  osal.o(i.Osal_MemSet)
+    i.PRINT_MESG_UART                        0x08002460   Section        0  uart_support.o(i.PRINT_MESG_UART)
+    i.PendSV_Handler                         0x08002494   Section        0  stm32xx_it.o(i.PendSV_Handler)
+    i.RCC_SetFlashLatencyFromMSIRange        0x08002498   Section        0  stm32l0xx_hal_rcc.o(i.RCC_SetFlashLatencyFromMSIRange)
+    RCC_SetFlashLatencyFromMSIRange          0x08002499   Thumb Code    94  stm32l0xx_hal_rcc.o(i.RCC_SetFlashLatencyFromMSIRange)
+    i.SPI_WaitOnFlagUntilTimeout             0x08002508   Section        0  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
+    SPI_WaitOnFlagUntilTimeout               0x08002509   Thumb Code   178  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
+    i.SVC_Handler                            0x080025ba   Section        0  stm32xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x080025bc   Section        0  stm32xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x080025d0   Section        0  cube_hal_l0.o(i.SystemClock_Config)
+    i.SystemInit                             0x08002634   Section        0  system_stm32l0xx.o(i.SystemInit)
+    i.Timer_Expired                          0x08002688   Section        0  gp_timer.o(i.Timer_Expired)
+    i.Timer_Set                              0x080026a4   Section        0  gp_timer.o(i.Timer_Set)
+    i.UART_AdvFeatureConfig                  0x080026b2   Section        0  stm32l0xx_hal_uart.o(i.UART_AdvFeatureConfig)
+    i.UART_CheckIdleState                    0x0800277c   Section        0  stm32l0xx_hal_uart.o(i.UART_CheckIdleState)
+    i.UART_SetConfig                         0x080027dc   Section        0  stm32l0xx_hal_uart.o(i.UART_SetConfig)
+    i.UART_WaitOnFlagUntilTimeout            0x080029f8   Section        0  stm32l0xx_hal_uart.o(i.UART_WaitOnFlagUntilTimeout)
+    i.User_Process                           0x08002a5c   Section        0  main.o(i.User_Process)
+    i.__0vsnprintf                           0x08002b28   Section        0  printfa.o(i.__0vsnprintf)
+    i.__ARM_clz                              0x08002b58   Section        0  depilogue.o(i.__ARM_clz)
+    i.__ARM_common_switch8                   0x08002b86   Section        0  stm32l0xx_hal_uart.o(i.__ARM_common_switch8)
+    i.__scatterload_copy                     0x08002ba0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08002bae   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08002bb0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._fp_digits                             0x08002bc0   Section        0  printfa.o(i._fp_digits)
+    _fp_digits                               0x08002bc1   Thumb Code   344  printfa.o(i._fp_digits)
+    i._printf_core                           0x08002d34   Section        0  printfa.o(i._printf_core)
+    _printf_core                             0x08002d35   Thumb Code  1760  printfa.o(i._printf_core)
+    i._printf_post_padding                   0x08003424   Section        0  printfa.o(i._printf_post_padding)
+    _printf_post_padding                     0x08003425   Thumb Code    32  printfa.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x08003444   Section        0  printfa.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x08003445   Thumb Code    44  printfa.o(i._printf_pre_padding)
+    i._snputc                                0x08003470   Section        0  printfa.o(i._snputc)
+    _snputc                                  0x08003471   Thumb Code    22  printfa.o(i._snputc)
+    i.aci_gap_create_connection              0x08003486   Section        0  bluenrg_gap_aci.o(i.aci_gap_create_connection)
+    i.aci_gap_init_IDB04A1                   0x080034f8   Section        0  bluenrg_gap_aci.o(i.aci_gap_init_IDB04A1)
+    i.aci_gap_init_IDB05A1                   0x08003574   Section        0  bluenrg_gap_aci.o(i.aci_gap_init_IDB05A1)
+    i.aci_gap_set_auth_requirement           0x080035f2   Section        0  bluenrg_gap_aci.o(i.aci_gap_set_auth_requirement)
+    i.aci_gap_set_discoverable               0x08003666   Section        0  bluenrg_gap_aci.o(i.aci_gap_set_discoverable)
+    i.aci_gatt_add_char                      0x0800372a   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_add_char)
+    i.aci_gatt_add_serv                      0x080037e0   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_add_serv)
+    i.aci_gatt_disc_charac_by_uuid           0x08003860   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_disc_charac_by_uuid)
+    i.aci_gatt_init                          0x080038f0   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_init)
+    i.aci_gatt_update_char_value             0x08003928   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_update_char_value)
+    i.aci_gatt_write_charac_descriptor       0x080039a8   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_write_charac_descriptor)
+    i.aci_gatt_write_without_response        0x08003a28   Section        0  bluenrg_gatt_aci.o(i.aci_gatt_write_without_response)
+    i.aci_hal_set_tx_power_level             0x08003a88   Section        0  bluenrg_hal_aci.o(i.aci_hal_set_tx_power_level)
+    i.aci_hal_write_config_data              0x08003acc   Section        0  bluenrg_hal_aci.o(i.aci_hal_write_config_data)
+    i.enableNotification                     0x08003b2c   Section        0  sample_service.o(i.enableNotification)
+    i.getBlueNRGVersion                      0x08003b70   Section        0  bluenrg_utils_small.o(i.getBlueNRGVersion)
+    i.hci_le_read_local_version              0x08003bc2   Section        0  hci_le.o(i.hci_le_read_local_version)
+    i.hci_le_set_scan_resp_data              0x08003c44   Section        0  hci_le.o(i.hci_le_set_scan_resp_data)
+    i.hci_send_cmd                           0x08003ca6   Section        0  hci.o(i.hci_send_cmd)
+    i.hci_send_req                           0x08003cd8   Section        0  hci.o(i.hci_send_req)
+    i.hci_write                              0x08003e54   Section        0  hci.o(i.hci_write)
+    i.lightSwitch                            0x08003e5c   Section        0  sample_service.o(i.lightSwitch)
+    i.list_get_size                          0x08003ea4   Section        0  ble_list.o(i.list_get_size)
+    i.list_init_head                         0x08003ec0   Section        0  ble_list.o(i.list_init_head)
+    i.list_insert_head                       0x08003ec6   Section        0  ble_list.o(i.list_insert_head)
+    i.list_insert_tail                       0x08003ede   Section        0  ble_list.o(i.list_insert_tail)
+    i.list_is_empty                          0x08003ef6   Section        0  ble_list.o(i.list_is_empty)
+    i.list_remove_head                       0x08003f0e   Section        0  ble_list.o(i.list_remove_head)
+    i.list_remove_node                       0x08003f32   Section        0  ble_list.o(i.list_remove_node)
+    i.list_remove_tail                       0x08003f48   Section        0  ble_list.o(i.list_remove_tail)
+    i.main                                   0x08003f6c   Section        0  main.o(i.main)
+    i.move_list                              0x0800424c   Section        0  hci.o(i.move_list)
+    move_list                                0x0800424d   Thumb Code    36  hci.o(i.move_list)
+    i.receiveData                            0x08004270   Section        0  sample_service.o(i.receiveData)
+    i.sendData                               0x08004294   Section        0  sample_service.o(i.sendData)
+    i.startReadRXCharHandle                  0x080043dc   Section        0  sample_service.o(i.startReadRXCharHandle)
+    i.startReadTXCharHandle                  0x08004448   Section        0  sample_service.o(i.startReadTXCharHandle)
+    i.vcom_init                              0x080044b4   Section        0  main.o(i.vcom_init)
+    .constdata                               0x080044e8   Section        6  stm32l0xx_nucleo.o(.constdata)
+    .constdata                               0x080044ee   Section       25  system_stm32l0xx.o(.constdata)
+    .constdata                               0x08004507   Section        8  system_stm32l0xx.o(.constdata)
     .data                                    0x20000000   Section        2  main.o(.data)
     .data                                    0x20000002   Section        1  main.o(.data)
     .data                                    0x20000004   Section       64  sample_service.o(.data)
@@ -1858,8 +1854,8 @@ Image Symbol Table
     __aeabi_uidiv                            0x080000f5   Thumb Code     0  uidiv.o(.text)
     __aeabi_uidivmod                         0x080000f5   Thumb Code    44  uidiv.o(.text)
     __aeabi_uldivmod                         0x08000121   Thumb Code    96  uldiv.o(.text)
+    ___aeabi_memcpy$ret                      0x08000181   Thumb Code    40  memcpy.o(.text)
     ___aeabi_memcpy8$ret                     0x08000181   Thumb Code     0  memcpy.o(.text)
-    __aeabi_memcpy                           0x08000181   Thumb Code    40  memcpy.o(.text)
     __aeabi_memcpy4                          0x08000181   Thumb Code     0  memcpy.o(.text)
     memcpy                                   0x08000181   Thumb Code     0  memcpy.o(.text)
     __aeabi_memset                           0x080001a9   Thumb Code    14  memseta.o(.text)
@@ -1870,163 +1866,162 @@ Image Symbol Table
     __aeabi_memclr8                          0x080001b7   Thumb Code     0  memseta.o(.text)
     memset                                   0x080001bb   Thumb Code    18  memseta.o(.text)
     strlen                                   0x080001cd   Thumb Code    14  strlen.o(.text)
-    strcmp                                   0x080001db   Thumb Code    28  strcmp.o(.text)
-    __aeabi_uwrite4                          0x080001f7   Thumb Code    18  uwrite4.o(.text)
-    __rt_uwrite4                             0x080001f7   Thumb Code     0  uwrite4.o(.text)
-    _uwrite4                                 0x080001f7   Thumb Code     0  uwrite4.o(.text)
-    __aeabi_fdiv                             0x08000209   Thumb Code   124  fdiv.o(.text)
-    __aeabi_ui2f                             0x08000285   Thumb Code    14  ffltui.o(.text)
-    __aeabi_f2iz                             0x08000293   Thumb Code    50  ffixi.o(.text)
-    __aeabi_llsl                             0x080002c5   Thumb Code    32  llshl.o(.text)
-    _ll_shift_l                              0x080002c5   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x080002e5   Thumb Code    34  llushr.o(.text)
-    _ll_ushift_r                             0x080002e5   Thumb Code     0  llushr.o(.text)
-    __I$use$fp                               0x08000307   Thumb Code     0  iusefp.o(.text)
-    _float_round                             0x08000307   Thumb Code    16  fepilogue.o(.text)
-    _float_epilogue                          0x08000317   Thumb Code   114  fepilogue.o(.text)
-    __aeabi_dadd                             0x08000389   Thumb Code   330  dadd.o(.text)
-    __aeabi_dsub                             0x080004d3   Thumb Code    12  dadd.o(.text)
-    __aeabi_drsub                            0x080004df   Thumb Code    12  dadd.o(.text)
-    __aeabi_dmul                             0x080004f1   Thumb Code   202  dmul.o(.text)
-    __aeabi_ddiv                             0x080005c1   Thumb Code   234  ddiv.o(.text)
-    __aeabi_d2ulz                            0x080006b1   Thumb Code    54  dfixul.o(.text)
-    __aeabi_cdrcmple                         0x080006f1   Thumb Code    38  cdrcmple.o(.text)
-    __scatterload                            0x08000719   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x08000719   Thumb Code     0  init.o(.text)
-    __aeabi_lasr                             0x0800073d   Thumb Code    38  llsshr.o(.text)
-    _ll_sshift_r                             0x0800073d   Thumb Code     0  llsshr.o(.text)
-    _double_round                            0x08000763   Thumb Code    26  depilogue.o(.text)
-    _double_epilogue                         0x0800077d   Thumb Code   164  depilogue.o(.text)
-    Add_Custom_Service                       0x08000821   Thumb Code   144  sample_service.o(i.Add_Custom_Service)
-    Add_Sample_Service                       0x08000949   Thumb Code   144  sample_service.o(i.Add_Sample_Service)
-    Attribute_Modified_CB                    0x08000a71   Thumb Code    60  sample_service.o(i.Attribute_Modified_CB)
-    BNRG_SPI_Init                            0x08000ab1   Thumb Code    50  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
-    BSP_LED_Init                             0x08000aed   Thumb Code    68  stm32l0xx_nucleo.o(i.BSP_LED_Init)
-    BSP_LED_Off                              0x08000b3d   Thumb Code    22  stm32l0xx_nucleo.o(i.BSP_LED_Off)
-    BSP_LED_On                               0x08000b5d   Thumb Code    22  stm32l0xx_nucleo.o(i.BSP_LED_On)
-    BSP_LED_Toggle                           0x08000b7d   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
-    BSP_PB_GetState                          0x08000b99   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
-    BSP_PB_Init                              0x08000bb5   Thumb Code   100  stm32l0xx_nucleo.o(i.BSP_PB_Init)
-    BlueNRG_DataPresent                      0x08000c29   Thumb Code    20  stm32_bluenrg_ble.o(i.BlueNRG_DataPresent)
-    BlueNRG_RST                              0x08000c3d   Thumb Code    44  stm32_bluenrg_ble.o(i.BlueNRG_RST)
-    BlueNRG_SPI_Read_All                     0x08000c69   Thumb Code   140  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
-    BlueNRG_SPI_Write                        0x08000d01   Thumb Code   148  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
-    Clear_SPI_EXTI_Flag                      0x08000da9   Thumb Code     8  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
-    Disable_SPI_IRQ                          0x08000db5   Thumb Code    10  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
-    EXTI0_1_IRQHandler                       0x08000dbf   Thumb Code    10  stm32xx_it.o(i.EXTI0_1_IRQHandler)
-    EXTI4_15_IRQHandler                      0x08000dc9   Thumb Code    18  stm32xx_it.o(i.EXTI4_15_IRQHandler)
-    Enable_SPI_IRQ                           0x08000de1   Thumb Code    10  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
-    Error_Handler                            0x08000deb   Thumb Code    14  main.o(i.Error_Handler)
-    GAP_ConnectionComplete_CB                0x08000df9   Thumb Code    44  sample_service.o(i.GAP_ConnectionComplete_CB)
-    GAP_DisconnectionComplete_CB             0x08000e51   Thumb Code    30  sample_service.o(i.GAP_DisconnectionComplete_CB)
-    GATT_Notification_CB                     0x08000e85   Thumb Code   214  sample_service.o(i.GATT_Notification_CB)
-    HAL_Delay                                0x08000fc9   Thumb Code    22  stm32l0xx_hal.o(i.HAL_Delay)
-    HAL_GPIO_EXTI_Callback                   0x08000fdf   Thumb Code     8  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
-    HAL_GPIO_EXTI_IRQHandler                 0x08000fe9   Thumb Code    18  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
-    HAL_GPIO_Init                            0x08001001   Thumb Code   346  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
-    HAL_GPIO_ReadPin                         0x08001179   Thumb Code    10  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
-    HAL_GPIO_TogglePin                       0x08001183   Thumb Code     8  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
-    HAL_GPIO_WritePin                        0x0800118b   Thumb Code    12  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
-    HAL_GetTick                              0x08001199   Thumb Code     6  stm32l0xx_hal.o(i.HAL_GetTick)
-    HAL_IncTick                              0x080011a5   Thumb Code    10  stm32l0xx_hal.o(i.HAL_IncTick)
-    HAL_Init                                 0x080011b5   Thumb Code    26  stm32l0xx_hal.o(i.HAL_Init)
-    HAL_InitTick                             0x080011d5   Thumb Code    34  stm32l0xx_hal.o(i.HAL_InitTick)
-    HAL_MspInit                              0x080011fd   Thumb Code     2  stm32l0xx_hal.o(i.HAL_MspInit)
-    HAL_NVIC_DisableIRQ                      0x08001201   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
-    HAL_NVIC_EnableIRQ                       0x08001215   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
-    HAL_NVIC_SetPriority                     0x08001229   Thumb Code     8  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
-    HAL_RCCEx_GetPeriphCLKFreq               0x08001231   Thumb Code   380  stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq)
-    HAL_RCC_ClockConfig                      0x080013d5   Thumb Code   340  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
-    HAL_RCC_GetPCLK1Freq                     0x0800153d   Thumb Code    20  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq)
-    HAL_RCC_GetPCLK2Freq                     0x0800155d   Thumb Code    20  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq)
-    HAL_RCC_GetSysClockFreq                  0x0800157d   Thumb Code   100  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
-    HAL_RCC_OscConfig                        0x080015f5   Thumb Code  1106  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
-    HAL_SPI_Init                             0x08001a47   Thumb Code   132  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
-    HAL_SPI_MspInit                          0x08001acd   Thumb Code   276  stm32l0xx_hal_msp.o(i.HAL_SPI_MspInit)
-    HAL_SPI_TransmitReceive                  0x08001bf1   Thumb Code   696  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
-    HAL_SYSTICK_Config                       0x08001ea9   Thumb Code    38  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
-    HAL_UART_Init                            0x08001ed9   Thumb Code   108  stm32l0xx_hal_uart.o(i.HAL_UART_Init)
-    HAL_UART_MspInit                         0x08001f45   Thumb Code    84  main.o(i.HAL_UART_MspInit)
-    HAL_UART_Transmit                        0x08001f9d   Thumb Code   200  stm32l0xx_hal_uart.o(i.HAL_UART_Transmit)
-    HCI_Event_CB                             0x08002065   Thumb Code   254  sample_service.o(i.HCI_Event_CB)
-    HCI_Init                                 0x080021d1   Thumb Code    42  hci.o(i.HCI_Init)
-    HCI_Isr                                  0x08002205   Thumb Code    96  hci.o(i.HCI_Isr)
-    HCI_Process                              0x08002269   Thumb Code    66  hci.o(i.HCI_Process)
-    HCI_Queue_Empty                          0x080022b1   Thumb Code    10  hci.o(i.HCI_Queue_Empty)
-    HCI_verify                               0x080022c1   Thumb Code    34  hci.o(i.HCI_verify)
-    Hal_Write_Serial                         0x080022e3   Thumb Code    46  stm32_bluenrg_ble.o(i.Hal_Write_Serial)
-    HardFault_Handler                        0x08002311   Thumb Code     2  stm32xx_it.o(i.HardFault_Handler)
-    Make_Connection                          0x08002315   Thumb Code   152  sample_service.o(i.Make_Connection)
-    NMI_Handler                              0x08002425   Thumb Code     2  stm32xx_it.o(i.NMI_Handler)
-    Osal_MemCpy                              0x0800246d   Thumb Code     8  osal.o(i.Osal_MemCpy)
-    Osal_MemSet                              0x08002475   Thumb Code     8  osal.o(i.Osal_MemSet)
-    PRINT_MESG_UART                          0x0800247d   Thumb Code    48  uart_support.o(i.PRINT_MESG_UART)
-    PendSV_Handler                           0x080024b1   Thumb Code     2  stm32xx_it.o(i.PendSV_Handler)
-    SVC_Handler                              0x080025d7   Thumb Code     2  stm32xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x080025d9   Thumb Code    16  stm32xx_it.o(i.SysTick_Handler)
-    SystemClock_Config                       0x080025ed   Thumb Code    92  cube_hal_l0.o(i.SystemClock_Config)
-    SystemInit                               0x08002651   Thumb Code    66  system_stm32l0xx.o(i.SystemInit)
-    Timer_Expired                            0x080026a5   Thumb Code    28  gp_timer.o(i.Timer_Expired)
-    Timer_Set                                0x080026c1   Thumb Code    14  gp_timer.o(i.Timer_Set)
-    UART_AdvFeatureConfig                    0x080026cf   Thumb Code   202  stm32l0xx_hal_uart.o(i.UART_AdvFeatureConfig)
-    UART_CheckIdleState                      0x08002799   Thumb Code    90  stm32l0xx_hal_uart.o(i.UART_CheckIdleState)
-    UART_SetConfig                           0x080027f9   Thumb Code   498  stm32l0xx_hal_uart.o(i.UART_SetConfig)
-    UART_WaitOnFlagUntilTimeout              0x08002a15   Thumb Code    98  stm32l0xx_hal_uart.o(i.UART_WaitOnFlagUntilTimeout)
-    User_Process                             0x08002a79   Thumb Code   158  main.o(i.User_Process)
-    __0vsnprintf                             0x08002b45   Thumb Code    44  printfa.o(i.__0vsnprintf)
-    __1vsnprintf                             0x08002b45   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    __2vsnprintf                             0x08002b45   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    __c89vsnprintf                           0x08002b45   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    vsnprintf                                0x08002b45   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    __ARM_clz                                0x08002b75   Thumb Code    46  depilogue.o(i.__ARM_clz)
-    __ARM_common_switch8                     0x08002ba3   Thumb Code    26  stm32l0xx_hal_uart.o(i.__ARM_common_switch8)
-    __scatterload_copy                       0x08002bbd   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08002bcb   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08002bcd   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    aci_gap_create_connection                0x080034a3   Thumb Code   114  bluenrg_gap_aci.o(i.aci_gap_create_connection)
-    aci_gap_init_IDB04A1                     0x08003515   Thumb Code   124  bluenrg_gap_aci.o(i.aci_gap_init_IDB04A1)
-    aci_gap_init_IDB05A1                     0x08003591   Thumb Code   126  bluenrg_gap_aci.o(i.aci_gap_init_IDB05A1)
-    aci_gap_set_auth_requirement             0x0800360f   Thumb Code   116  bluenrg_gap_aci.o(i.aci_gap_set_auth_requirement)
-    aci_gap_set_discoverable                 0x08003683   Thumb Code   196  bluenrg_gap_aci.o(i.aci_gap_set_discoverable)
-    aci_gatt_add_char                        0x08003747   Thumb Code   182  bluenrg_gatt_aci.o(i.aci_gatt_add_char)
-    aci_gatt_add_serv                        0x080037fd   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_add_serv)
-    aci_gatt_disc_charac_by_uuid             0x0800387d   Thumb Code   144  bluenrg_gatt_aci.o(i.aci_gatt_disc_charac_by_uuid)
-    aci_gatt_init                            0x0800390d   Thumb Code    56  bluenrg_gatt_aci.o(i.aci_gatt_init)
-    aci_gatt_update_char_value               0x08003945   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_update_char_value)
-    aci_gatt_write_charac_descriptor         0x080039c5   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_write_charac_descriptor)
-    aci_gatt_write_without_response          0x08003a45   Thumb Code    96  bluenrg_gatt_aci.o(i.aci_gatt_write_without_response)
-    aci_hal_set_tx_power_level               0x08003aa5   Thumb Code    68  bluenrg_hal_aci.o(i.aci_hal_set_tx_power_level)
-    aci_hal_write_config_data                0x08003ae9   Thumb Code    94  bluenrg_hal_aci.o(i.aci_hal_write_config_data)
-    enableNotification                       0x08003b49   Thumb Code    56  sample_service.o(i.enableNotification)
-    getBlueNRGVersion                        0x08003b8d   Thumb Code    82  bluenrg_utils_small.o(i.getBlueNRGVersion)
-    hci_le_read_local_version                0x08003bdf   Thumb Code   130  hci_le.o(i.hci_le_read_local_version)
-    hci_le_set_scan_resp_data                0x08003c61   Thumb Code    98  hci_le.o(i.hci_le_set_scan_resp_data)
-    hci_send_cmd                             0x08003cc3   Thumb Code    48  hci.o(i.hci_send_cmd)
-    hci_send_req                             0x08003cf5   Thumb Code   376  hci.o(i.hci_send_req)
-    hci_write                                0x08003e71   Thumb Code     8  hci.o(i.hci_write)
-    lightSwitch                              0x08003e79   Thumb Code   100  sample_service.o(i.lightSwitch)
-    list_get_size                            0x08003eed   Thumb Code    28  ble_list.o(i.list_get_size)
-    list_init_head                           0x08003f09   Thumb Code     6  ble_list.o(i.list_init_head)
-    list_insert_head                         0x08003f0f   Thumb Code    24  ble_list.o(i.list_insert_head)
-    list_insert_tail                         0x08003f27   Thumb Code    24  ble_list.o(i.list_insert_tail)
-    list_is_empty                            0x08003f3f   Thumb Code    24  ble_list.o(i.list_is_empty)
-    list_remove_head                         0x08003f57   Thumb Code    36  ble_list.o(i.list_remove_head)
-    list_remove_node                         0x08003f7b   Thumb Code    22  ble_list.o(i.list_remove_node)
-    list_remove_tail                         0x08003f91   Thumb Code    36  ble_list.o(i.list_remove_tail)
-    main                                     0x08003fb5   Thumb Code   360  main.o(i.main)
-    receiveData                              0x080042b9   Thumb Code    32  sample_service.o(i.receiveData)
-    sendData                                 0x080042dd   Thumb Code   214  sample_service.o(i.sendData)
-    startReadRXCharHandle                    0x08004425   Thumb Code    52  sample_service.o(i.startReadRXCharHandle)
-    startReadTXCharHandle                    0x08004491   Thumb Code    52  sample_service.o(i.startReadTXCharHandle)
-    vcom_init                                0x080044fd   Thumb Code    42  main.o(i.vcom_init)
-    BUTTON_IRQn                              0x08004530   Data           1  stm32l0xx_nucleo.o(.constdata)
-    LED_PIN                                  0x08004532   Data           2  stm32l0xx_nucleo.o(.constdata)
-    BUTTON_PIN                               0x08004534   Data           2  stm32l0xx_nucleo.o(.constdata)
-    AHBPrescTable                            0x08004536   Data          16  system_stm32l0xx.o(.constdata)
-    PLLMulTable                              0x08004546   Data           9  system_stm32l0xx.o(.constdata)
-    APBPrescTable                            0x0800454f   Data           8  system_stm32l0xx.o(.constdata)
-    Region$$Table$$Base                      0x08004558   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08004578   Number         0  anon$$obj.o(Region$$Table)
+    __aeabi_uwrite4                          0x080001db   Thumb Code    18  uwrite4.o(.text)
+    __rt_uwrite4                             0x080001db   Thumb Code     0  uwrite4.o(.text)
+    _uwrite4                                 0x080001db   Thumb Code     0  uwrite4.o(.text)
+    __aeabi_fdiv                             0x080001ed   Thumb Code   124  fdiv.o(.text)
+    __aeabi_ui2f                             0x08000269   Thumb Code    14  ffltui.o(.text)
+    __aeabi_f2iz                             0x08000277   Thumb Code    50  ffixi.o(.text)
+    __aeabi_llsl                             0x080002a9   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x080002a9   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x080002c9   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x080002c9   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x080002eb   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x080002eb   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x080002fb   Thumb Code   114  fepilogue.o(.text)
+    __aeabi_dadd                             0x0800036d   Thumb Code   330  dadd.o(.text)
+    __aeabi_dsub                             0x080004b7   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x080004c3   Thumb Code    12  dadd.o(.text)
+    __aeabi_dmul                             0x080004d5   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x080005a5   Thumb Code   234  ddiv.o(.text)
+    __aeabi_d2ulz                            0x08000695   Thumb Code    54  dfixul.o(.text)
+    __aeabi_cdrcmple                         0x080006d5   Thumb Code    38  cdrcmple.o(.text)
+    __scatterload                            0x080006fd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x080006fd   Thumb Code     0  init.o(.text)
+    __aeabi_lasr                             0x08000721   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x08000721   Thumb Code     0  llsshr.o(.text)
+    _double_round                            0x08000747   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x08000761   Thumb Code   164  depilogue.o(.text)
+    Add_Custom_Service                       0x08000805   Thumb Code   144  sample_service.o(i.Add_Custom_Service)
+    Add_Sample_Service                       0x0800092d   Thumb Code   144  sample_service.o(i.Add_Sample_Service)
+    Attribute_Modified_CB                    0x08000a55   Thumb Code    60  sample_service.o(i.Attribute_Modified_CB)
+    BNRG_SPI_Init                            0x08000a95   Thumb Code    50  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
+    BSP_LED_Init                             0x08000ad1   Thumb Code    68  stm32l0xx_nucleo.o(i.BSP_LED_Init)
+    BSP_LED_Off                              0x08000b21   Thumb Code    22  stm32l0xx_nucleo.o(i.BSP_LED_Off)
+    BSP_LED_On                               0x08000b41   Thumb Code    22  stm32l0xx_nucleo.o(i.BSP_LED_On)
+    BSP_LED_Toggle                           0x08000b61   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
+    BSP_PB_GetState                          0x08000b7d   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
+    BSP_PB_Init                              0x08000b99   Thumb Code   100  stm32l0xx_nucleo.o(i.BSP_PB_Init)
+    BlueNRG_DataPresent                      0x08000c0d   Thumb Code    20  stm32_bluenrg_ble.o(i.BlueNRG_DataPresent)
+    BlueNRG_RST                              0x08000c21   Thumb Code    44  stm32_bluenrg_ble.o(i.BlueNRG_RST)
+    BlueNRG_SPI_Read_All                     0x08000c4d   Thumb Code   140  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
+    BlueNRG_SPI_Write                        0x08000ce5   Thumb Code   148  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
+    Clear_SPI_EXTI_Flag                      0x08000d8d   Thumb Code     8  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
+    Disable_SPI_IRQ                          0x08000d99   Thumb Code    10  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
+    EXTI0_1_IRQHandler                       0x08000da3   Thumb Code    10  stm32xx_it.o(i.EXTI0_1_IRQHandler)
+    EXTI4_15_IRQHandler                      0x08000dad   Thumb Code    18  stm32xx_it.o(i.EXTI4_15_IRQHandler)
+    Enable_SPI_IRQ                           0x08000dc5   Thumb Code    10  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
+    Error_Handler                            0x08000dcf   Thumb Code    14  main.o(i.Error_Handler)
+    GAP_ConnectionComplete_CB                0x08000ddd   Thumb Code    44  sample_service.o(i.GAP_ConnectionComplete_CB)
+    GAP_DisconnectionComplete_CB             0x08000e35   Thumb Code    30  sample_service.o(i.GAP_DisconnectionComplete_CB)
+    GATT_Notification_CB                     0x08000e69   Thumb Code   214  sample_service.o(i.GATT_Notification_CB)
+    HAL_Delay                                0x08000fad   Thumb Code    22  stm32l0xx_hal.o(i.HAL_Delay)
+    HAL_GPIO_EXTI_Callback                   0x08000fc3   Thumb Code     8  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
+    HAL_GPIO_EXTI_IRQHandler                 0x08000fcd   Thumb Code    18  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
+    HAL_GPIO_Init                            0x08000fe5   Thumb Code   346  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
+    HAL_GPIO_ReadPin                         0x0800115d   Thumb Code    10  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
+    HAL_GPIO_TogglePin                       0x08001167   Thumb Code     8  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
+    HAL_GPIO_WritePin                        0x0800116f   Thumb Code    12  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
+    HAL_GetTick                              0x0800117d   Thumb Code     6  stm32l0xx_hal.o(i.HAL_GetTick)
+    HAL_IncTick                              0x08001189   Thumb Code    10  stm32l0xx_hal.o(i.HAL_IncTick)
+    HAL_Init                                 0x08001199   Thumb Code    26  stm32l0xx_hal.o(i.HAL_Init)
+    HAL_InitTick                             0x080011b9   Thumb Code    34  stm32l0xx_hal.o(i.HAL_InitTick)
+    HAL_MspInit                              0x080011e1   Thumb Code     2  stm32l0xx_hal.o(i.HAL_MspInit)
+    HAL_NVIC_DisableIRQ                      0x080011e5   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
+    HAL_NVIC_EnableIRQ                       0x080011f9   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
+    HAL_NVIC_SetPriority                     0x0800120d   Thumb Code     8  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
+    HAL_RCCEx_GetPeriphCLKFreq               0x08001215   Thumb Code   380  stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq)
+    HAL_RCC_ClockConfig                      0x080013b9   Thumb Code   340  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
+    HAL_RCC_GetPCLK1Freq                     0x08001521   Thumb Code    20  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq)
+    HAL_RCC_GetPCLK2Freq                     0x08001541   Thumb Code    20  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq)
+    HAL_RCC_GetSysClockFreq                  0x08001561   Thumb Code   100  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
+    HAL_RCC_OscConfig                        0x080015d9   Thumb Code  1106  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
+    HAL_SPI_Init                             0x08001a2b   Thumb Code   132  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
+    HAL_SPI_MspInit                          0x08001ab1   Thumb Code   276  stm32l0xx_hal_msp.o(i.HAL_SPI_MspInit)
+    HAL_SPI_TransmitReceive                  0x08001bd5   Thumb Code   696  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
+    HAL_SYSTICK_Config                       0x08001e8d   Thumb Code    38  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
+    HAL_UART_Init                            0x08001ebd   Thumb Code   108  stm32l0xx_hal_uart.o(i.HAL_UART_Init)
+    HAL_UART_MspInit                         0x08001f29   Thumb Code    84  main.o(i.HAL_UART_MspInit)
+    HAL_UART_Transmit                        0x08001f81   Thumb Code   200  stm32l0xx_hal_uart.o(i.HAL_UART_Transmit)
+    HCI_Event_CB                             0x08002049   Thumb Code   254  sample_service.o(i.HCI_Event_CB)
+    HCI_Init                                 0x080021b5   Thumb Code    42  hci.o(i.HCI_Init)
+    HCI_Isr                                  0x080021e9   Thumb Code    96  hci.o(i.HCI_Isr)
+    HCI_Process                              0x0800224d   Thumb Code    66  hci.o(i.HCI_Process)
+    HCI_Queue_Empty                          0x08002295   Thumb Code    10  hci.o(i.HCI_Queue_Empty)
+    HCI_verify                               0x080022a5   Thumb Code    34  hci.o(i.HCI_verify)
+    Hal_Write_Serial                         0x080022c7   Thumb Code    46  stm32_bluenrg_ble.o(i.Hal_Write_Serial)
+    HardFault_Handler                        0x080022f5   Thumb Code     2  stm32xx_it.o(i.HardFault_Handler)
+    Make_Connection                          0x080022f9   Thumb Code   152  sample_service.o(i.Make_Connection)
+    NMI_Handler                              0x08002409   Thumb Code     2  stm32xx_it.o(i.NMI_Handler)
+    Osal_MemCpy                              0x08002451   Thumb Code     8  osal.o(i.Osal_MemCpy)
+    Osal_MemSet                              0x08002459   Thumb Code     8  osal.o(i.Osal_MemSet)
+    PRINT_MESG_UART                          0x08002461   Thumb Code    48  uart_support.o(i.PRINT_MESG_UART)
+    PendSV_Handler                           0x08002495   Thumb Code     2  stm32xx_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x080025bb   Thumb Code     2  stm32xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x080025bd   Thumb Code    16  stm32xx_it.o(i.SysTick_Handler)
+    SystemClock_Config                       0x080025d1   Thumb Code    92  cube_hal_l0.o(i.SystemClock_Config)
+    SystemInit                               0x08002635   Thumb Code    66  system_stm32l0xx.o(i.SystemInit)
+    Timer_Expired                            0x08002689   Thumb Code    28  gp_timer.o(i.Timer_Expired)
+    Timer_Set                                0x080026a5   Thumb Code    14  gp_timer.o(i.Timer_Set)
+    UART_AdvFeatureConfig                    0x080026b3   Thumb Code   202  stm32l0xx_hal_uart.o(i.UART_AdvFeatureConfig)
+    UART_CheckIdleState                      0x0800277d   Thumb Code    90  stm32l0xx_hal_uart.o(i.UART_CheckIdleState)
+    UART_SetConfig                           0x080027dd   Thumb Code   498  stm32l0xx_hal_uart.o(i.UART_SetConfig)
+    UART_WaitOnFlagUntilTimeout              0x080029f9   Thumb Code    98  stm32l0xx_hal_uart.o(i.UART_WaitOnFlagUntilTimeout)
+    User_Process                             0x08002a5d   Thumb Code   158  main.o(i.User_Process)
+    __0vsnprintf                             0x08002b29   Thumb Code    44  printfa.o(i.__0vsnprintf)
+    __1vsnprintf                             0x08002b29   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    __2vsnprintf                             0x08002b29   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    __c89vsnprintf                           0x08002b29   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    vsnprintf                                0x08002b29   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    __ARM_clz                                0x08002b59   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __ARM_common_switch8                     0x08002b87   Thumb Code    26  stm32l0xx_hal_uart.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x08002ba1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08002baf   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08002bb1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    aci_gap_create_connection                0x08003487   Thumb Code   114  bluenrg_gap_aci.o(i.aci_gap_create_connection)
+    aci_gap_init_IDB04A1                     0x080034f9   Thumb Code   124  bluenrg_gap_aci.o(i.aci_gap_init_IDB04A1)
+    aci_gap_init_IDB05A1                     0x08003575   Thumb Code   126  bluenrg_gap_aci.o(i.aci_gap_init_IDB05A1)
+    aci_gap_set_auth_requirement             0x080035f3   Thumb Code   116  bluenrg_gap_aci.o(i.aci_gap_set_auth_requirement)
+    aci_gap_set_discoverable                 0x08003667   Thumb Code   196  bluenrg_gap_aci.o(i.aci_gap_set_discoverable)
+    aci_gatt_add_char                        0x0800372b   Thumb Code   182  bluenrg_gatt_aci.o(i.aci_gatt_add_char)
+    aci_gatt_add_serv                        0x080037e1   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_add_serv)
+    aci_gatt_disc_charac_by_uuid             0x08003861   Thumb Code   144  bluenrg_gatt_aci.o(i.aci_gatt_disc_charac_by_uuid)
+    aci_gatt_init                            0x080038f1   Thumb Code    56  bluenrg_gatt_aci.o(i.aci_gatt_init)
+    aci_gatt_update_char_value               0x08003929   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_update_char_value)
+    aci_gatt_write_charac_descriptor         0x080039a9   Thumb Code   128  bluenrg_gatt_aci.o(i.aci_gatt_write_charac_descriptor)
+    aci_gatt_write_without_response          0x08003a29   Thumb Code    96  bluenrg_gatt_aci.o(i.aci_gatt_write_without_response)
+    aci_hal_set_tx_power_level               0x08003a89   Thumb Code    68  bluenrg_hal_aci.o(i.aci_hal_set_tx_power_level)
+    aci_hal_write_config_data                0x08003acd   Thumb Code    94  bluenrg_hal_aci.o(i.aci_hal_write_config_data)
+    enableNotification                       0x08003b2d   Thumb Code    56  sample_service.o(i.enableNotification)
+    getBlueNRGVersion                        0x08003b71   Thumb Code    82  bluenrg_utils_small.o(i.getBlueNRGVersion)
+    hci_le_read_local_version                0x08003bc3   Thumb Code   130  hci_le.o(i.hci_le_read_local_version)
+    hci_le_set_scan_resp_data                0x08003c45   Thumb Code    98  hci_le.o(i.hci_le_set_scan_resp_data)
+    hci_send_cmd                             0x08003ca7   Thumb Code    48  hci.o(i.hci_send_cmd)
+    hci_send_req                             0x08003cd9   Thumb Code   376  hci.o(i.hci_send_req)
+    hci_write                                0x08003e55   Thumb Code     8  hci.o(i.hci_write)
+    lightSwitch                              0x08003e5d   Thumb Code    62  sample_service.o(i.lightSwitch)
+    list_get_size                            0x08003ea5   Thumb Code    28  ble_list.o(i.list_get_size)
+    list_init_head                           0x08003ec1   Thumb Code     6  ble_list.o(i.list_init_head)
+    list_insert_head                         0x08003ec7   Thumb Code    24  ble_list.o(i.list_insert_head)
+    list_insert_tail                         0x08003edf   Thumb Code    24  ble_list.o(i.list_insert_tail)
+    list_is_empty                            0x08003ef7   Thumb Code    24  ble_list.o(i.list_is_empty)
+    list_remove_head                         0x08003f0f   Thumb Code    36  ble_list.o(i.list_remove_head)
+    list_remove_node                         0x08003f33   Thumb Code    22  ble_list.o(i.list_remove_node)
+    list_remove_tail                         0x08003f49   Thumb Code    36  ble_list.o(i.list_remove_tail)
+    main                                     0x08003f6d   Thumb Code   360  main.o(i.main)
+    receiveData                              0x08004271   Thumb Code    32  sample_service.o(i.receiveData)
+    sendData                                 0x08004295   Thumb Code   214  sample_service.o(i.sendData)
+    startReadRXCharHandle                    0x080043dd   Thumb Code    52  sample_service.o(i.startReadRXCharHandle)
+    startReadTXCharHandle                    0x08004449   Thumb Code    52  sample_service.o(i.startReadTXCharHandle)
+    vcom_init                                0x080044b5   Thumb Code    42  main.o(i.vcom_init)
+    BUTTON_IRQn                              0x080044e8   Data           1  stm32l0xx_nucleo.o(.constdata)
+    LED_PIN                                  0x080044ea   Data           2  stm32l0xx_nucleo.o(.constdata)
+    BUTTON_PIN                               0x080044ec   Data           2  stm32l0xx_nucleo.o(.constdata)
+    AHBPrescTable                            0x080044ee   Data          16  system_stm32l0xx.o(.constdata)
+    PLLMulTable                              0x080044fe   Data           9  system_stm32l0xx.o(.constdata)
+    APBPrescTable                            0x08004507   Data           8  system_stm32l0xx.o(.constdata)
+    Region$$Table$$Base                      0x08004510   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08004530   Number         0  anon$$obj.o(Region$$Table)
     bnrg_expansion_board                     0x20000000   Data           1  main.o(.data)
     BLE_Role                                 0x20000001   Data           1  main.o(.data)
     throughput_test                          0x20000002   Data           1  main.o(.data)
@@ -2067,204 +2062,203 @@ Memory Map of the image
 
   Image Entry point : 0x080000c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000045f4, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000045ac, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00004578, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00004530, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000000c0   Data   RO            3    RESET               startup_stm32l053xx.o
     0x080000c0   0x080000c0   0x00000000   Code   RO         3883  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x080000c0   0x080000c0   0x00000004   Code   RO         3944    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x080000c4   0x080000c4   0x00000004   Code   RO         3947    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         3949    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         3951    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x080000c8   0x080000c8   0x00000008   Code   RO         3952    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x080000d0   0x080000d0   0x00000004   Code   RO         3959    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
-    0x080000d4   0x080000d4   0x00000000   Code   RO         3954    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
-    0x080000d4   0x080000d4   0x00000000   Code   RO         3956    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
-    0x080000d4   0x080000d4   0x00000004   Code   RO         3945    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x080000c0   0x080000c0   0x00000004   Code   RO         3942    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x080000c4   0x080000c4   0x00000004   Code   RO         3945    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         3947    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         3949    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x080000c8   0x080000c8   0x00000008   Code   RO         3950    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x080000d0   0x080000d0   0x00000004   Code   RO         3957    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
+    0x080000d4   0x080000d4   0x00000000   Code   RO         3952    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
+    0x080000d4   0x080000d4   0x00000000   Code   RO         3954    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
+    0x080000d4   0x080000d4   0x00000004   Code   RO         3943    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x080000d8   0x080000d8   0x0000001c   Code   RO            4    .text               startup_stm32l053xx.o
     0x080000f4   0x080000f4   0x0000002c   Code   RO         3886    .text               mc_p.l(uidiv.o)
     0x08000120   0x08000120   0x00000060   Code   RO         3888    .text               mc_p.l(uldiv.o)
     0x08000180   0x08000180   0x00000028   Code   RO         3890    .text               mc_p.l(memcpy.o)
     0x080001a8   0x080001a8   0x00000024   Code   RO         3896    .text               mc_p.l(memseta.o)
     0x080001cc   0x080001cc   0x0000000e   Code   RO         3898    .text               mc_p.l(strlen.o)
-    0x080001da   0x080001da   0x0000001c   Code   RO         3900    .text               mc_p.l(strcmp.o)
-    0x080001f6   0x080001f6   0x00000012   Code   RO         3936    .text               mc_p.l(uwrite4.o)
-    0x08000208   0x08000208   0x0000007c   Code   RO         3938    .text               mf_p.l(fdiv.o)
-    0x08000284   0x08000284   0x0000000e   Code   RO         3940    .text               mf_p.l(ffltui.o)
-    0x08000292   0x08000292   0x00000032   Code   RO         3942    .text               mf_p.l(ffixi.o)
-    0x080002c4   0x080002c4   0x00000020   Code   RO         3963    .text               mc_p.l(llshl.o)
-    0x080002e4   0x080002e4   0x00000022   Code   RO         3965    .text               mc_p.l(llushr.o)
-    0x08000306   0x08000306   0x00000000   Code   RO         3967    .text               mc_p.l(iusefp.o)
-    0x08000306   0x08000306   0x00000082   Code   RO         3968    .text               mf_p.l(fepilogue.o)
-    0x08000388   0x08000388   0x00000168   Code   RO         3970    .text               mf_p.l(dadd.o)
-    0x080004f0   0x080004f0   0x000000d0   Code   RO         3972    .text               mf_p.l(dmul.o)
-    0x080005c0   0x080005c0   0x000000f0   Code   RO         3974    .text               mf_p.l(ddiv.o)
-    0x080006b0   0x080006b0   0x00000040   Code   RO         3976    .text               mf_p.l(dfixul.o)
-    0x080006f0   0x080006f0   0x00000028   Code   RO         3978    .text               mf_p.l(cdrcmple.o)
-    0x08000718   0x08000718   0x00000024   Code   RO         3980    .text               mc_p.l(init.o)
-    0x0800073c   0x0800073c   0x00000026   Code   RO         3983    .text               mc_p.l(llsshr.o)
-    0x08000762   0x08000762   0x000000be   Code   RO         3986    .text               mf_p.l(depilogue.o)
-    0x08000820   0x08000820   0x00000128   Code   RO          294    i.Add_Custom_Service  sample_service.o
-    0x08000948   0x08000948   0x00000128   Code   RO          295    i.Add_Sample_Service  sample_service.o
-    0x08000a70   0x08000a70   0x00000040   Code   RO          296    i.Attribute_Modified_CB  sample_service.o
-    0x08000ab0   0x08000ab0   0x0000003c   Code   RO          736    i.BNRG_SPI_Init     stm32_bluenrg_ble.o
-    0x08000aec   0x08000aec   0x00000050   Code   RO          556    i.BSP_LED_Init      stm32l0xx_nucleo.o
-    0x08000b3c   0x08000b3c   0x00000020   Code   RO          557    i.BSP_LED_Off       stm32l0xx_nucleo.o
-    0x08000b5c   0x08000b5c   0x00000020   Code   RO          558    i.BSP_LED_On        stm32l0xx_nucleo.o
-    0x08000b7c   0x08000b7c   0x0000001c   Code   RO          559    i.BSP_LED_Toggle    stm32l0xx_nucleo.o
-    0x08000b98   0x08000b98   0x0000001c   Code   RO          561    i.BSP_PB_GetState   stm32l0xx_nucleo.o
-    0x08000bb4   0x08000bb4   0x00000074   Code   RO          562    i.BSP_PB_Init       stm32l0xx_nucleo.o
-    0x08000c28   0x08000c28   0x00000014   Code   RO          737    i.BlueNRG_DataPresent  stm32_bluenrg_ble.o
-    0x08000c3c   0x08000c3c   0x0000002c   Code   RO          739    i.BlueNRG_RST       stm32_bluenrg_ble.o
-    0x08000c68   0x08000c68   0x00000098   Code   RO          740    i.BlueNRG_SPI_Read_All  stm32_bluenrg_ble.o
-    0x08000d00   0x08000d00   0x000000a8   Code   RO          741    i.BlueNRG_SPI_Write  stm32_bluenrg_ble.o
-    0x08000da8   0x08000da8   0x0000000c   Code   RO          742    i.Clear_SPI_EXTI_Flag  stm32_bluenrg_ble.o
-    0x08000db4   0x08000db4   0x0000000a   Code   RO          744    i.Disable_SPI_IRQ   stm32_bluenrg_ble.o
-    0x08000dbe   0x08000dbe   0x0000000a   Code   RO          406    i.EXTI0_1_IRQHandler  stm32xx_it.o
-    0x08000dc8   0x08000dc8   0x00000018   Code   RO          407    i.EXTI4_15_IRQHandler  stm32xx_it.o
-    0x08000de0   0x08000de0   0x0000000a   Code   RO          745    i.Enable_SPI_IRQ    stm32_bluenrg_ble.o
-    0x08000dea   0x08000dea   0x0000000e   Code   RO          186    i.Error_Handler     main.o
-    0x08000df8   0x08000df8   0x00000058   Code   RO          297    i.GAP_ConnectionComplete_CB  sample_service.o
-    0x08000e50   0x08000e50   0x00000034   Code   RO          298    i.GAP_DisconnectionComplete_CB  sample_service.o
-    0x08000e84   0x08000e84   0x00000144   Code   RO          299    i.GATT_Notification_CB  sample_service.o
-    0x08000fc8   0x08000fc8   0x00000016   Code   RO          877    i.HAL_Delay         stm32l0xx_hal.o
-    0x08000fde   0x08000fde   0x00000008   Code   RO           12    i.HAL_GPIO_EXTI_Callback  bluenrg_interface.o
-    0x08000fe6   0x08000fe6   0x00000002   PAD
-    0x08000fe8   0x08000fe8   0x00000018   Code   RO         1656    i.HAL_GPIO_EXTI_IRQHandler  stm32l0xx_hal_gpio.o
-    0x08001000   0x08001000   0x00000178   Code   RO         1657    i.HAL_GPIO_Init     stm32l0xx_hal_gpio.o
-    0x08001178   0x08001178   0x0000000a   Code   RO         1659    i.HAL_GPIO_ReadPin  stm32l0xx_hal_gpio.o
-    0x08001182   0x08001182   0x00000008   Code   RO         1660    i.HAL_GPIO_TogglePin  stm32l0xx_hal_gpio.o
-    0x0800118a   0x0800118a   0x0000000c   Code   RO         1661    i.HAL_GPIO_WritePin  stm32l0xx_hal_gpio.o
-    0x08001196   0x08001196   0x00000002   PAD
-    0x08001198   0x08001198   0x0000000c   Code   RO          881    i.HAL_GetTick       stm32l0xx_hal.o
-    0x080011a4   0x080011a4   0x00000010   Code   RO          882    i.HAL_IncTick       stm32l0xx_hal.o
-    0x080011b4   0x080011b4   0x00000020   Code   RO          883    i.HAL_Init          stm32l0xx_hal.o
-    0x080011d4   0x080011d4   0x00000028   Code   RO          884    i.HAL_InitTick      stm32l0xx_hal.o
-    0x080011fc   0x080011fc   0x00000002   Code   RO          886    i.HAL_MspInit       stm32l0xx_hal.o
-    0x080011fe   0x080011fe   0x00000002   PAD
-    0x08001200   0x08001200   0x00000014   Code   RO         1274    i.HAL_NVIC_DisableIRQ  stm32l0xx_hal_cortex.o
-    0x08001214   0x08001214   0x00000014   Code   RO         1275    i.HAL_NVIC_EnableIRQ  stm32l0xx_hal_cortex.o
-    0x08001228   0x08001228   0x00000008   Code   RO         1279    i.HAL_NVIC_SetPriority  stm32l0xx_hal_cortex.o
-    0x08001230   0x08001230   0x000001a4   Code   RO         2000    i.HAL_RCCEx_GetPeriphCLKFreq  stm32l0xx_hal_rcc_ex.o
-    0x080013d4   0x080013d4   0x00000168   Code   RO         1889    i.HAL_RCC_ClockConfig  stm32l0xx_hal_rcc.o
-    0x0800153c   0x0800153c   0x00000020   Code   RO         1895    i.HAL_RCC_GetPCLK1Freq  stm32l0xx_hal_rcc.o
-    0x0800155c   0x0800155c   0x00000020   Code   RO         1896    i.HAL_RCC_GetPCLK2Freq  stm32l0xx_hal_rcc.o
-    0x0800157c   0x0800157c   0x00000078   Code   RO         1897    i.HAL_RCC_GetSysClockFreq  stm32l0xx_hal_rcc.o
-    0x080015f4   0x080015f4   0x00000452   Code   RO         1900    i.HAL_RCC_OscConfig  stm32l0xx_hal_rcc.o
-    0x08001a46   0x08001a46   0x00000084   Code   RO         2121    i.HAL_SPI_Init      stm32l0xx_hal_spi.o
-    0x08001aca   0x08001aca   0x00000002   PAD
-    0x08001acc   0x08001acc   0x00000124   Code   RO          530    i.HAL_SPI_MspInit   stm32l0xx_hal_msp.o
-    0x08001bf0   0x08001bf0   0x000002b8   Code   RO         2130    i.HAL_SPI_TransmitReceive  stm32l0xx_hal_spi.o
-    0x08001ea8   0x08001ea8   0x00000030   Code   RO         1283    i.HAL_SYSTICK_Config  stm32l0xx_hal_cortex.o
-    0x08001ed8   0x08001ed8   0x0000006c   Code   RO         2374    i.HAL_UART_Init     stm32l0xx_hal_uart.o
-    0x08001f44   0x08001f44   0x00000058   Code   RO          187    i.HAL_UART_MspInit  main.o
-    0x08001f9c   0x08001f9c   0x000000c8   Code   RO         2382    i.HAL_UART_Transmit  stm32l0xx_hal_uart.o
-    0x08002064   0x08002064   0x0000016c   Code   RO          300    i.HCI_Event_CB      sample_service.o
-    0x080021d0   0x080021d0   0x00000034   Code   RO         2754    i.HCI_Init          hci.o
-    0x08002204   0x08002204   0x00000064   Code   RO         2755    i.HCI_Isr           hci.o
-    0x08002268   0x08002268   0x00000048   Code   RO         2756    i.HCI_Process       hci.o
-    0x080022b0   0x080022b0   0x00000010   Code   RO         2757    i.HCI_Queue_Empty   hci.o
-    0x080022c0   0x080022c0   0x00000022   Code   RO         2758    i.HCI_verify        hci.o
-    0x080022e2   0x080022e2   0x0000002e   Code   RO          746    i.Hal_Write_Serial  stm32_bluenrg_ble.o
-    0x08002310   0x08002310   0x00000002   Code   RO          408    i.HardFault_Handler  stm32xx_it.o
-    0x08002312   0x08002312   0x00000002   PAD
-    0x08002314   0x08002314   0x00000110   Code   RO          301    i.Make_Connection   sample_service.o
-    0x08002424   0x08002424   0x00000002   Code   RO          409    i.NMI_Handler       stm32xx_it.o
-    0x08002426   0x08002426   0x00000002   PAD
-    0x08002428   0x08002428   0x00000044   Code   RO         1285    i.NVIC_SetPriority  stm32l0xx_hal_cortex.o
-    0x0800246c   0x0800246c   0x00000008   Code   RO         3865    i.Osal_MemCpy       osal.o
-    0x08002474   0x08002474   0x00000008   Code   RO         3866    i.Osal_MemSet       osal.o
-    0x0800247c   0x0800247c   0x00000034   Code   RO          475    i.PRINT_MESG_UART   uart_support.o
-    0x080024b0   0x080024b0   0x00000002   Code   RO          410    i.PendSV_Handler    stm32xx_it.o
-    0x080024b2   0x080024b2   0x00000002   PAD
-    0x080024b4   0x080024b4   0x00000070   Code   RO         1901    i.RCC_SetFlashLatencyFromMSIRange  stm32l0xx_hal_rcc.o
-    0x08002524   0x08002524   0x000000b2   Code   RO         2151    i.SPI_WaitOnFlagUntilTimeout  stm32l0xx_hal_spi.o
-    0x080025d6   0x080025d6   0x00000002   Code   RO          411    i.SVC_Handler       stm32xx_it.o
-    0x080025d8   0x080025d8   0x00000014   Code   RO          412    i.SysTick_Handler   stm32xx_it.o
-    0x080025ec   0x080025ec   0x00000064   Code   RO          166    i.SystemClock_Config  cube_hal_l0.o
-    0x08002650   0x08002650   0x00000054   Code   RO          835    i.SystemInit        system_stm32l0xx.o
-    0x080026a4   0x080026a4   0x0000001c   Code   RO         3734    i.Timer_Expired     gp_timer.o
-    0x080026c0   0x080026c0   0x0000000e   Code   RO         3738    i.Timer_Set         gp_timer.o
-    0x080026ce   0x080026ce   0x000000ca   Code   RO         2387    i.UART_AdvFeatureConfig  stm32l0xx_hal_uart.o
-    0x08002798   0x08002798   0x00000060   Code   RO         2388    i.UART_CheckIdleState  stm32l0xx_hal_uart.o
-    0x080027f8   0x080027f8   0x0000021c   Code   RO         2402    i.UART_SetConfig    stm32l0xx_hal_uart.o
-    0x08002a14   0x08002a14   0x00000062   Code   RO         2404    i.UART_WaitOnFlagUntilTimeout  stm32l0xx_hal_uart.o
-    0x08002a76   0x08002a76   0x00000002   PAD
-    0x08002a78   0x08002a78   0x000000cc   Code   RO          188    i.User_Process      main.o
-    0x08002b44   0x08002b44   0x00000030   Code   RO         3912    i.__0vsnprintf      mc_p.l(printfa.o)
-    0x08002b74   0x08002b74   0x0000002e   Code   RO         3988    i.__ARM_clz         mf_p.l(depilogue.o)
-    0x08002ba2   0x08002ba2   0x0000001a   Code   RO         2685    i.__ARM_common_switch8  stm32l0xx_hal_uart.o
-    0x08002bbc   0x08002bbc   0x0000000e   Code   RO         3992    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x08002bca   0x08002bca   0x00000002   Code   RO         3993    i.__scatterload_null  mc_p.l(handlers.o)
-    0x08002bcc   0x08002bcc   0x0000000e   Code   RO         3994    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x08002bda   0x08002bda   0x00000002   PAD
-    0x08002bdc   0x08002bdc   0x00000174   Code   RO         3914    i._fp_digits        mc_p.l(printfa.o)
-    0x08002d50   0x08002d50   0x000006f0   Code   RO         3915    i._printf_core      mc_p.l(printfa.o)
-    0x08003440   0x08003440   0x00000020   Code   RO         3916    i._printf_post_padding  mc_p.l(printfa.o)
-    0x08003460   0x08003460   0x0000002c   Code   RO         3917    i._printf_pre_padding  mc_p.l(printfa.o)
-    0x0800348c   0x0800348c   0x00000016   Code   RO         3918    i._snputc           mc_p.l(printfa.o)
-    0x080034a2   0x080034a2   0x00000072   Code   RO         3043    i.aci_gap_create_connection  bluenrg_gap_aci.o
-    0x08003514   0x08003514   0x0000007c   Code   RO         3047    i.aci_gap_init_IDB04A1  bluenrg_gap_aci.o
-    0x08003590   0x08003590   0x0000007e   Code   RO         3048    i.aci_gap_init_IDB05A1  bluenrg_gap_aci.o
-    0x0800360e   0x0800360e   0x00000074   Code   RO         3054    i.aci_gap_set_auth_requirement  bluenrg_gap_aci.o
-    0x08003682   0x08003682   0x000000c4   Code   RO         3059    i.aci_gap_set_discoverable  bluenrg_gap_aci.o
-    0x08003746   0x08003746   0x000000b6   Code   RO         3310    i.aci_gatt_add_char  bluenrg_gatt_aci.o
-    0x080037fc   0x080037fc   0x00000080   Code   RO         3312    i.aci_gatt_add_serv  bluenrg_gatt_aci.o
-    0x0800387c   0x0800387c   0x00000090   Code   RO         3321    i.aci_gatt_disc_charac_by_uuid  bluenrg_gatt_aci.o
-    0x0800390c   0x0800390c   0x00000038   Code   RO         3326    i.aci_gatt_init     bluenrg_gatt_aci.o
-    0x08003944   0x08003944   0x00000080   Code   RO         3339    i.aci_gatt_update_char_value  bluenrg_gatt_aci.o
-    0x080039c4   0x080039c4   0x00000080   Code   RO         3341    i.aci_gatt_write_charac_descriptor  bluenrg_gatt_aci.o
-    0x08003a44   0x08003a44   0x00000060   Code   RO         3347    i.aci_gatt_write_without_response  bluenrg_gatt_aci.o
-    0x08003aa4   0x08003aa4   0x00000044   Code   RO         3588    i.aci_hal_set_tx_power_level  bluenrg_hal_aci.o
-    0x08003ae8   0x08003ae8   0x0000005e   Code   RO         3591    i.aci_hal_write_config_data  bluenrg_hal_aci.o
-    0x08003b46   0x08003b46   0x00000002   PAD
-    0x08003b48   0x08003b48   0x00000044   Code   RO          302    i.enableNotification  sample_service.o
-    0x08003b8c   0x08003b8c   0x00000052   Code   RO         3688    i.getBlueNRGVersion  bluenrg_utils_small.o
-    0x08003bde   0x08003bde   0x00000082   Code   RO         2851    i.hci_le_read_local_version  hci_le.o
-    0x08003c60   0x08003c60   0x00000062   Code   RO         2862    i.hci_le_set_scan_resp_data  hci_le.o
-    0x08003cc2   0x08003cc2   0x00000030   Code   RO         2759    i.hci_send_cmd      hci.o
-    0x08003cf2   0x08003cf2   0x00000002   PAD
-    0x08003cf4   0x08003cf4   0x0000017c   Code   RO         2760    i.hci_send_req      hci.o
-    0x08003e70   0x08003e70   0x00000008   Code   RO         2762    i.hci_write         hci.o
-    0x08003e78   0x08003e78   0x00000074   Code   RO          303    i.lightSwitch       sample_service.o
-    0x08003eec   0x08003eec   0x0000001c   Code   RO         3780    i.list_get_size     ble_list.o
-    0x08003f08   0x08003f08   0x00000006   Code   RO         3781    i.list_init_head    ble_list.o
-    0x08003f0e   0x08003f0e   0x00000018   Code   RO         3782    i.list_insert_head  ble_list.o
-    0x08003f26   0x08003f26   0x00000018   Code   RO         3785    i.list_insert_tail  ble_list.o
-    0x08003f3e   0x08003f3e   0x00000018   Code   RO         3786    i.list_is_empty     ble_list.o
-    0x08003f56   0x08003f56   0x00000024   Code   RO         3787    i.list_remove_head  ble_list.o
-    0x08003f7a   0x08003f7a   0x00000016   Code   RO         3788    i.list_remove_node  ble_list.o
-    0x08003f90   0x08003f90   0x00000024   Code   RO         3789    i.list_remove_tail  ble_list.o
-    0x08003fb4   0x08003fb4   0x000002e0   Code   RO          189    i.main              main.o
-    0x08004294   0x08004294   0x00000024   Code   RO         2763    i.move_list         hci.o
-    0x080042b8   0x080042b8   0x00000024   Code   RO          304    i.receiveData       sample_service.o
-    0x080042dc   0x080042dc   0x00000148   Code   RO          305    i.sendData          sample_service.o
-    0x08004424   0x08004424   0x0000006c   Code   RO          306    i.startReadRXCharHandle  sample_service.o
-    0x08004490   0x08004490   0x0000006c   Code   RO          307    i.startReadTXCharHandle  sample_service.o
-    0x080044fc   0x080044fc   0x00000034   Code   RO          190    i.vcom_init         main.o
-    0x08004530   0x08004530   0x00000006   Data   RO          580    .constdata          stm32l0xx_nucleo.o
-    0x08004536   0x08004536   0x00000019   Data   RO          836    .constdata          system_stm32l0xx.o
-    0x0800454f   0x0800454f   0x00000008   Data   RO          837    .constdata          system_stm32l0xx.o
-    0x08004557   0x08004557   0x00000001   PAD
-    0x08004558   0x08004558   0x00000020   Data   RO         3990    Region$$Table       anon$$obj.o
+    0x080001da   0x080001da   0x00000012   Code   RO         3934    .text               mc_p.l(uwrite4.o)
+    0x080001ec   0x080001ec   0x0000007c   Code   RO         3936    .text               mf_p.l(fdiv.o)
+    0x08000268   0x08000268   0x0000000e   Code   RO         3938    .text               mf_p.l(ffltui.o)
+    0x08000276   0x08000276   0x00000032   Code   RO         3940    .text               mf_p.l(ffixi.o)
+    0x080002a8   0x080002a8   0x00000020   Code   RO         3961    .text               mc_p.l(llshl.o)
+    0x080002c8   0x080002c8   0x00000022   Code   RO         3963    .text               mc_p.l(llushr.o)
+    0x080002ea   0x080002ea   0x00000000   Code   RO         3965    .text               mc_p.l(iusefp.o)
+    0x080002ea   0x080002ea   0x00000082   Code   RO         3966    .text               mf_p.l(fepilogue.o)
+    0x0800036c   0x0800036c   0x00000168   Code   RO         3968    .text               mf_p.l(dadd.o)
+    0x080004d4   0x080004d4   0x000000d0   Code   RO         3970    .text               mf_p.l(dmul.o)
+    0x080005a4   0x080005a4   0x000000f0   Code   RO         3972    .text               mf_p.l(ddiv.o)
+    0x08000694   0x08000694   0x00000040   Code   RO         3974    .text               mf_p.l(dfixul.o)
+    0x080006d4   0x080006d4   0x00000028   Code   RO         3976    .text               mf_p.l(cdrcmple.o)
+    0x080006fc   0x080006fc   0x00000024   Code   RO         3978    .text               mc_p.l(init.o)
+    0x08000720   0x08000720   0x00000026   Code   RO         3981    .text               mc_p.l(llsshr.o)
+    0x08000746   0x08000746   0x000000be   Code   RO         3984    .text               mf_p.l(depilogue.o)
+    0x08000804   0x08000804   0x00000128   Code   RO          294    i.Add_Custom_Service  sample_service.o
+    0x0800092c   0x0800092c   0x00000128   Code   RO          295    i.Add_Sample_Service  sample_service.o
+    0x08000a54   0x08000a54   0x00000040   Code   RO          296    i.Attribute_Modified_CB  sample_service.o
+    0x08000a94   0x08000a94   0x0000003c   Code   RO          736    i.BNRG_SPI_Init     stm32_bluenrg_ble.o
+    0x08000ad0   0x08000ad0   0x00000050   Code   RO          556    i.BSP_LED_Init      stm32l0xx_nucleo.o
+    0x08000b20   0x08000b20   0x00000020   Code   RO          557    i.BSP_LED_Off       stm32l0xx_nucleo.o
+    0x08000b40   0x08000b40   0x00000020   Code   RO          558    i.BSP_LED_On        stm32l0xx_nucleo.o
+    0x08000b60   0x08000b60   0x0000001c   Code   RO          559    i.BSP_LED_Toggle    stm32l0xx_nucleo.o
+    0x08000b7c   0x08000b7c   0x0000001c   Code   RO          561    i.BSP_PB_GetState   stm32l0xx_nucleo.o
+    0x08000b98   0x08000b98   0x00000074   Code   RO          562    i.BSP_PB_Init       stm32l0xx_nucleo.o
+    0x08000c0c   0x08000c0c   0x00000014   Code   RO          737    i.BlueNRG_DataPresent  stm32_bluenrg_ble.o
+    0x08000c20   0x08000c20   0x0000002c   Code   RO          739    i.BlueNRG_RST       stm32_bluenrg_ble.o
+    0x08000c4c   0x08000c4c   0x00000098   Code   RO          740    i.BlueNRG_SPI_Read_All  stm32_bluenrg_ble.o
+    0x08000ce4   0x08000ce4   0x000000a8   Code   RO          741    i.BlueNRG_SPI_Write  stm32_bluenrg_ble.o
+    0x08000d8c   0x08000d8c   0x0000000c   Code   RO          742    i.Clear_SPI_EXTI_Flag  stm32_bluenrg_ble.o
+    0x08000d98   0x08000d98   0x0000000a   Code   RO          744    i.Disable_SPI_IRQ   stm32_bluenrg_ble.o
+    0x08000da2   0x08000da2   0x0000000a   Code   RO          406    i.EXTI0_1_IRQHandler  stm32xx_it.o
+    0x08000dac   0x08000dac   0x00000018   Code   RO          407    i.EXTI4_15_IRQHandler  stm32xx_it.o
+    0x08000dc4   0x08000dc4   0x0000000a   Code   RO          745    i.Enable_SPI_IRQ    stm32_bluenrg_ble.o
+    0x08000dce   0x08000dce   0x0000000e   Code   RO          186    i.Error_Handler     main.o
+    0x08000ddc   0x08000ddc   0x00000058   Code   RO          297    i.GAP_ConnectionComplete_CB  sample_service.o
+    0x08000e34   0x08000e34   0x00000034   Code   RO          298    i.GAP_DisconnectionComplete_CB  sample_service.o
+    0x08000e68   0x08000e68   0x00000144   Code   RO          299    i.GATT_Notification_CB  sample_service.o
+    0x08000fac   0x08000fac   0x00000016   Code   RO          877    i.HAL_Delay         stm32l0xx_hal.o
+    0x08000fc2   0x08000fc2   0x00000008   Code   RO           12    i.HAL_GPIO_EXTI_Callback  bluenrg_interface.o
+    0x08000fca   0x08000fca   0x00000002   PAD
+    0x08000fcc   0x08000fcc   0x00000018   Code   RO         1656    i.HAL_GPIO_EXTI_IRQHandler  stm32l0xx_hal_gpio.o
+    0x08000fe4   0x08000fe4   0x00000178   Code   RO         1657    i.HAL_GPIO_Init     stm32l0xx_hal_gpio.o
+    0x0800115c   0x0800115c   0x0000000a   Code   RO         1659    i.HAL_GPIO_ReadPin  stm32l0xx_hal_gpio.o
+    0x08001166   0x08001166   0x00000008   Code   RO         1660    i.HAL_GPIO_TogglePin  stm32l0xx_hal_gpio.o
+    0x0800116e   0x0800116e   0x0000000c   Code   RO         1661    i.HAL_GPIO_WritePin  stm32l0xx_hal_gpio.o
+    0x0800117a   0x0800117a   0x00000002   PAD
+    0x0800117c   0x0800117c   0x0000000c   Code   RO          881    i.HAL_GetTick       stm32l0xx_hal.o
+    0x08001188   0x08001188   0x00000010   Code   RO          882    i.HAL_IncTick       stm32l0xx_hal.o
+    0x08001198   0x08001198   0x00000020   Code   RO          883    i.HAL_Init          stm32l0xx_hal.o
+    0x080011b8   0x080011b8   0x00000028   Code   RO          884    i.HAL_InitTick      stm32l0xx_hal.o
+    0x080011e0   0x080011e0   0x00000002   Code   RO          886    i.HAL_MspInit       stm32l0xx_hal.o
+    0x080011e2   0x080011e2   0x00000002   PAD
+    0x080011e4   0x080011e4   0x00000014   Code   RO         1274    i.HAL_NVIC_DisableIRQ  stm32l0xx_hal_cortex.o
+    0x080011f8   0x080011f8   0x00000014   Code   RO         1275    i.HAL_NVIC_EnableIRQ  stm32l0xx_hal_cortex.o
+    0x0800120c   0x0800120c   0x00000008   Code   RO         1279    i.HAL_NVIC_SetPriority  stm32l0xx_hal_cortex.o
+    0x08001214   0x08001214   0x000001a4   Code   RO         2000    i.HAL_RCCEx_GetPeriphCLKFreq  stm32l0xx_hal_rcc_ex.o
+    0x080013b8   0x080013b8   0x00000168   Code   RO         1889    i.HAL_RCC_ClockConfig  stm32l0xx_hal_rcc.o
+    0x08001520   0x08001520   0x00000020   Code   RO         1895    i.HAL_RCC_GetPCLK1Freq  stm32l0xx_hal_rcc.o
+    0x08001540   0x08001540   0x00000020   Code   RO         1896    i.HAL_RCC_GetPCLK2Freq  stm32l0xx_hal_rcc.o
+    0x08001560   0x08001560   0x00000078   Code   RO         1897    i.HAL_RCC_GetSysClockFreq  stm32l0xx_hal_rcc.o
+    0x080015d8   0x080015d8   0x00000452   Code   RO         1900    i.HAL_RCC_OscConfig  stm32l0xx_hal_rcc.o
+    0x08001a2a   0x08001a2a   0x00000084   Code   RO         2121    i.HAL_SPI_Init      stm32l0xx_hal_spi.o
+    0x08001aae   0x08001aae   0x00000002   PAD
+    0x08001ab0   0x08001ab0   0x00000124   Code   RO          530    i.HAL_SPI_MspInit   stm32l0xx_hal_msp.o
+    0x08001bd4   0x08001bd4   0x000002b8   Code   RO         2130    i.HAL_SPI_TransmitReceive  stm32l0xx_hal_spi.o
+    0x08001e8c   0x08001e8c   0x00000030   Code   RO         1283    i.HAL_SYSTICK_Config  stm32l0xx_hal_cortex.o
+    0x08001ebc   0x08001ebc   0x0000006c   Code   RO         2374    i.HAL_UART_Init     stm32l0xx_hal_uart.o
+    0x08001f28   0x08001f28   0x00000058   Code   RO          187    i.HAL_UART_MspInit  main.o
+    0x08001f80   0x08001f80   0x000000c8   Code   RO         2382    i.HAL_UART_Transmit  stm32l0xx_hal_uart.o
+    0x08002048   0x08002048   0x0000016c   Code   RO          300    i.HCI_Event_CB      sample_service.o
+    0x080021b4   0x080021b4   0x00000034   Code   RO         2754    i.HCI_Init          hci.o
+    0x080021e8   0x080021e8   0x00000064   Code   RO         2755    i.HCI_Isr           hci.o
+    0x0800224c   0x0800224c   0x00000048   Code   RO         2756    i.HCI_Process       hci.o
+    0x08002294   0x08002294   0x00000010   Code   RO         2757    i.HCI_Queue_Empty   hci.o
+    0x080022a4   0x080022a4   0x00000022   Code   RO         2758    i.HCI_verify        hci.o
+    0x080022c6   0x080022c6   0x0000002e   Code   RO          746    i.Hal_Write_Serial  stm32_bluenrg_ble.o
+    0x080022f4   0x080022f4   0x00000002   Code   RO          408    i.HardFault_Handler  stm32xx_it.o
+    0x080022f6   0x080022f6   0x00000002   PAD
+    0x080022f8   0x080022f8   0x00000110   Code   RO          301    i.Make_Connection   sample_service.o
+    0x08002408   0x08002408   0x00000002   Code   RO          409    i.NMI_Handler       stm32xx_it.o
+    0x0800240a   0x0800240a   0x00000002   PAD
+    0x0800240c   0x0800240c   0x00000044   Code   RO         1285    i.NVIC_SetPriority  stm32l0xx_hal_cortex.o
+    0x08002450   0x08002450   0x00000008   Code   RO         3865    i.Osal_MemCpy       osal.o
+    0x08002458   0x08002458   0x00000008   Code   RO         3866    i.Osal_MemSet       osal.o
+    0x08002460   0x08002460   0x00000034   Code   RO          475    i.PRINT_MESG_UART   uart_support.o
+    0x08002494   0x08002494   0x00000002   Code   RO          410    i.PendSV_Handler    stm32xx_it.o
+    0x08002496   0x08002496   0x00000002   PAD
+    0x08002498   0x08002498   0x00000070   Code   RO         1901    i.RCC_SetFlashLatencyFromMSIRange  stm32l0xx_hal_rcc.o
+    0x08002508   0x08002508   0x000000b2   Code   RO         2151    i.SPI_WaitOnFlagUntilTimeout  stm32l0xx_hal_spi.o
+    0x080025ba   0x080025ba   0x00000002   Code   RO          411    i.SVC_Handler       stm32xx_it.o
+    0x080025bc   0x080025bc   0x00000014   Code   RO          412    i.SysTick_Handler   stm32xx_it.o
+    0x080025d0   0x080025d0   0x00000064   Code   RO          166    i.SystemClock_Config  cube_hal_l0.o
+    0x08002634   0x08002634   0x00000054   Code   RO          835    i.SystemInit        system_stm32l0xx.o
+    0x08002688   0x08002688   0x0000001c   Code   RO         3734    i.Timer_Expired     gp_timer.o
+    0x080026a4   0x080026a4   0x0000000e   Code   RO         3738    i.Timer_Set         gp_timer.o
+    0x080026b2   0x080026b2   0x000000ca   Code   RO         2387    i.UART_AdvFeatureConfig  stm32l0xx_hal_uart.o
+    0x0800277c   0x0800277c   0x00000060   Code   RO         2388    i.UART_CheckIdleState  stm32l0xx_hal_uart.o
+    0x080027dc   0x080027dc   0x0000021c   Code   RO         2402    i.UART_SetConfig    stm32l0xx_hal_uart.o
+    0x080029f8   0x080029f8   0x00000062   Code   RO         2404    i.UART_WaitOnFlagUntilTimeout  stm32l0xx_hal_uart.o
+    0x08002a5a   0x08002a5a   0x00000002   PAD
+    0x08002a5c   0x08002a5c   0x000000cc   Code   RO          188    i.User_Process      main.o
+    0x08002b28   0x08002b28   0x00000030   Code   RO         3910    i.__0vsnprintf      mc_p.l(printfa.o)
+    0x08002b58   0x08002b58   0x0000002e   Code   RO         3986    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x08002b86   0x08002b86   0x0000001a   Code   RO         2685    i.__ARM_common_switch8  stm32l0xx_hal_uart.o
+    0x08002ba0   0x08002ba0   0x0000000e   Code   RO         3990    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08002bae   0x08002bae   0x00000002   Code   RO         3991    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08002bb0   0x08002bb0   0x0000000e   Code   RO         3992    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08002bbe   0x08002bbe   0x00000002   PAD
+    0x08002bc0   0x08002bc0   0x00000174   Code   RO         3912    i._fp_digits        mc_p.l(printfa.o)
+    0x08002d34   0x08002d34   0x000006f0   Code   RO         3913    i._printf_core      mc_p.l(printfa.o)
+    0x08003424   0x08003424   0x00000020   Code   RO         3914    i._printf_post_padding  mc_p.l(printfa.o)
+    0x08003444   0x08003444   0x0000002c   Code   RO         3915    i._printf_pre_padding  mc_p.l(printfa.o)
+    0x08003470   0x08003470   0x00000016   Code   RO         3916    i._snputc           mc_p.l(printfa.o)
+    0x08003486   0x08003486   0x00000072   Code   RO         3043    i.aci_gap_create_connection  bluenrg_gap_aci.o
+    0x080034f8   0x080034f8   0x0000007c   Code   RO         3047    i.aci_gap_init_IDB04A1  bluenrg_gap_aci.o
+    0x08003574   0x08003574   0x0000007e   Code   RO         3048    i.aci_gap_init_IDB05A1  bluenrg_gap_aci.o
+    0x080035f2   0x080035f2   0x00000074   Code   RO         3054    i.aci_gap_set_auth_requirement  bluenrg_gap_aci.o
+    0x08003666   0x08003666   0x000000c4   Code   RO         3059    i.aci_gap_set_discoverable  bluenrg_gap_aci.o
+    0x0800372a   0x0800372a   0x000000b6   Code   RO         3310    i.aci_gatt_add_char  bluenrg_gatt_aci.o
+    0x080037e0   0x080037e0   0x00000080   Code   RO         3312    i.aci_gatt_add_serv  bluenrg_gatt_aci.o
+    0x08003860   0x08003860   0x00000090   Code   RO         3321    i.aci_gatt_disc_charac_by_uuid  bluenrg_gatt_aci.o
+    0x080038f0   0x080038f0   0x00000038   Code   RO         3326    i.aci_gatt_init     bluenrg_gatt_aci.o
+    0x08003928   0x08003928   0x00000080   Code   RO         3339    i.aci_gatt_update_char_value  bluenrg_gatt_aci.o
+    0x080039a8   0x080039a8   0x00000080   Code   RO         3341    i.aci_gatt_write_charac_descriptor  bluenrg_gatt_aci.o
+    0x08003a28   0x08003a28   0x00000060   Code   RO         3347    i.aci_gatt_write_without_response  bluenrg_gatt_aci.o
+    0x08003a88   0x08003a88   0x00000044   Code   RO         3588    i.aci_hal_set_tx_power_level  bluenrg_hal_aci.o
+    0x08003acc   0x08003acc   0x0000005e   Code   RO         3591    i.aci_hal_write_config_data  bluenrg_hal_aci.o
+    0x08003b2a   0x08003b2a   0x00000002   PAD
+    0x08003b2c   0x08003b2c   0x00000044   Code   RO          302    i.enableNotification  sample_service.o
+    0x08003b70   0x08003b70   0x00000052   Code   RO         3688    i.getBlueNRGVersion  bluenrg_utils_small.o
+    0x08003bc2   0x08003bc2   0x00000082   Code   RO         2851    i.hci_le_read_local_version  hci_le.o
+    0x08003c44   0x08003c44   0x00000062   Code   RO         2862    i.hci_le_set_scan_resp_data  hci_le.o
+    0x08003ca6   0x08003ca6   0x00000030   Code   RO         2759    i.hci_send_cmd      hci.o
+    0x08003cd6   0x08003cd6   0x00000002   PAD
+    0x08003cd8   0x08003cd8   0x0000017c   Code   RO         2760    i.hci_send_req      hci.o
+    0x08003e54   0x08003e54   0x00000008   Code   RO         2762    i.hci_write         hci.o
+    0x08003e5c   0x08003e5c   0x00000048   Code   RO          303    i.lightSwitch       sample_service.o
+    0x08003ea4   0x08003ea4   0x0000001c   Code   RO         3780    i.list_get_size     ble_list.o
+    0x08003ec0   0x08003ec0   0x00000006   Code   RO         3781    i.list_init_head    ble_list.o
+    0x08003ec6   0x08003ec6   0x00000018   Code   RO         3782    i.list_insert_head  ble_list.o
+    0x08003ede   0x08003ede   0x00000018   Code   RO         3785    i.list_insert_tail  ble_list.o
+    0x08003ef6   0x08003ef6   0x00000018   Code   RO         3786    i.list_is_empty     ble_list.o
+    0x08003f0e   0x08003f0e   0x00000024   Code   RO         3787    i.list_remove_head  ble_list.o
+    0x08003f32   0x08003f32   0x00000016   Code   RO         3788    i.list_remove_node  ble_list.o
+    0x08003f48   0x08003f48   0x00000024   Code   RO         3789    i.list_remove_tail  ble_list.o
+    0x08003f6c   0x08003f6c   0x000002e0   Code   RO          189    i.main              main.o
+    0x0800424c   0x0800424c   0x00000024   Code   RO         2763    i.move_list         hci.o
+    0x08004270   0x08004270   0x00000024   Code   RO          304    i.receiveData       sample_service.o
+    0x08004294   0x08004294   0x00000148   Code   RO          305    i.sendData          sample_service.o
+    0x080043dc   0x080043dc   0x0000006c   Code   RO          306    i.startReadRXCharHandle  sample_service.o
+    0x08004448   0x08004448   0x0000006c   Code   RO          307    i.startReadTXCharHandle  sample_service.o
+    0x080044b4   0x080044b4   0x00000034   Code   RO          190    i.vcom_init         main.o
+    0x080044e8   0x080044e8   0x00000006   Data   RO          580    .constdata          stm32l0xx_nucleo.o
+    0x080044ee   0x080044ee   0x00000019   Data   RO          836    .constdata          system_stm32l0xx.o
+    0x08004507   0x08004507   0x00000008   Data   RO          837    .constdata          system_stm32l0xx.o
+    0x0800450f   0x0800450f   0x00000001   PAD
+    0x08004510   0x08004510   0x00000020   Data   RO         3988    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08004578, Size: 0x00000800, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08004530, Size: 0x00000800, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08004578   0x00000002   Data   RW          192    .data               main.o
-    0x20000002   0x0800457a   0x00000001   Data   RW          193    .data               main.o
-    0x20000003   0x0800457b   0x00000001   PAD
-    0x20000004   0x0800457c   0x00000040   Data   RW          308    .data               sample_service.o
-    0x20000044   0x080045bc   0x00000008   Data   RW          413    .data               stm32xx_it.o
-    0x2000004c   0x080045c4   0x00000014   Data   RW          581    .data               stm32l0xx_nucleo.o
-    0x20000060   0x080045d8   0x00000004   Data   RW          838    .data               system_stm32l0xx.o
-    0x20000064   0x080045dc   0x00000004   Data   RW          893    .data               stm32l0xx_hal.o
-    0x20000068   0x080045e0   0x00000014   Data   RW         2765    .data               hci.o
+    0x20000000   0x08004530   0x00000002   Data   RW          192    .data               main.o
+    0x20000002   0x08004532   0x00000001   Data   RW          193    .data               main.o
+    0x20000003   0x08004533   0x00000001   PAD
+    0x20000004   0x08004534   0x00000040   Data   RW          308    .data               sample_service.o
+    0x20000044   0x08004574   0x00000008   Data   RW          413    .data               stm32xx_it.o
+    0x2000004c   0x0800457c   0x00000014   Data   RW          581    .data               stm32l0xx_nucleo.o
+    0x20000060   0x08004590   0x00000004   Data   RW          838    .data               system_stm32l0xx.o
+    0x20000064   0x08004594   0x00000004   Data   RW          893    .data               stm32l0xx_hal.o
+    0x20000068   0x08004598   0x00000014   Data   RW         2765    .data               hci.o
     0x2000007c        -       0x00000070   Zero   RW          191    .bss                main.o
     0x200000ec        -       0x00000058   Zero   RW          750    .bss                stm32_bluenrg_ble.o
     0x20000144        -       0x000002bc   Zero   RW         2764    .bss                hci.o
@@ -2290,7 +2284,7 @@ Image component sizes
        228          0          0          0          0       2760   hci_le.o
       1094        436          0          3        112      43659   main.o
         16          0          0          0          0       1524   osal.o
-      2520        972          0         64          0      13384   sample_service.o
+      2476        966          0         64          0      13356   sample_service.o
         28          8        192          0       1024        696   startup_stm32l053xx.o
        522         46          0          0         88       8024   stm32_bluenrg_ble.o
        124         24          0          4          0       4837   stm32l0xx_hal.o
@@ -2307,7 +2301,7 @@ Image component sizes
         52          4          0          0          0       1282   uart_support.o
 
     ----------------------------------------------------------------------
-     13288       1934        264        124       1924     506937   Object Totals
+     13244       1928        264        124       1924     506909   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         20          0          1          1          0          0   (incl. Padding)
 
@@ -2333,7 +2327,6 @@ Image component sizes
         40          0          0          0          0         68   memcpy.o
         36          0          0          0          0        100   memseta.o
       2294         94          0          0          0        460   printfa.o
-        28          0          0          0          0         68   strcmp.o
         14          0          0          0          0         60   strlen.o
         44          0          0          0          0         72   uidiv.o
         96          0          0          0          0         84   uldiv.o
@@ -2350,18 +2343,18 @@ Image component sizes
         14          0          0          0          0         68   ffltui.o
 
     ----------------------------------------------------------------------
-      4232        140          0          0          0       2252   Library Totals
+      4204        140          0          0          0       2184   Library Totals
          2          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-      2764        110          0          0          0       1244   mc_p.l
+      2736        110          0          0          0       1176   mc_p.l
       1466         30          0          0          0       1008   mf_p.l
 
     ----------------------------------------------------------------------
-      4232        140          0          0          0       2252   Library Totals
+      4204        140          0          0          0       2184   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -2370,15 +2363,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     17520       2074        264        124       1924     503173   Grand Totals
-     17520       2074        264        124       1924     503173   ELF Image Totals
-     17520       2074        264        124          0          0   ROM Totals
+     17448       2068        264        124       1924     503121   Grand Totals
+     17448       2068        264        124       1924     503121   ELF Image Totals
+     17448       2068        264        124          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                17784 (  17.37kB)
+    Total RO  Size (Code + RO Data)                17712 (  17.30kB)
     Total RW  Size (RW Data + ZI Data)              2048 (   2.00kB)
-    Total ROM Size (Code + RO Data + RW Data)      17908 (  17.49kB)
+    Total ROM Size (Code + RO Data + RW Data)      17836 (  17.42kB)
 
 ==============================================================================
 

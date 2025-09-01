@@ -155,7 +155,7 @@ tBleStatus Add_Custom_Service(void)
                            16, 1, &CustRXHandle);
   if (ret != BLE_STATUS_SUCCESS) goto fail;
   
-  PRINTF("Custom Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", TXCharHandle, RXCharHandle);
+  PRINTF("Custom Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", CustTXHandle, CustRXHandle);
   return BLE_STATUS_SUCCESS; 
   
 fail:
@@ -262,24 +262,29 @@ void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
 
 void lightSwitch(uint8_t* data_buffer, uint8_t Nb_bytes)
 {
-	if (!strcmp((char*) data_buffer, "1"))
+	
+	if (Nb_bytes == 1)
 	{
-		BSP_LED_On(LED2);
-	}
-	else if (!strcmp((char*) data_buffer, "2"))
-	{
-		BSP_LED_Off(LED2);
-	} else {
-		for(int i = 0; i < Nb_bytes; i++) {
-			PRINTF("%c", data_buffer[i]);		
+		// if (!strcmp((char*) data_buffer, "1"))
+		if (data_buffer[0] == '1')
+		{
+			BSP_LED_On(LED2);
+		}
+		// else if (!strcmp((char*) data_buffer, "2"))
+		else if (data_buffer[0] == '2')
+		{
+			BSP_LED_Off(LED2);
 		}
 	}
 	
-	for(int i = 0; i < Nb_bytes; i++) {
-    PRINTF("%d", strcmp((char*) data_buffer, "2"));		
-  }
+	 else {
+		for(int i = 0; i < Nb_bytes; i++) {
+			PRINTF("%c", data_buffer[i]);		
+		}
+		PRINTF("\n");
+		}
 	
-	memcpy(data_buffer, 0, Nb_bytes);
+	// memcpy(data_buffer, 0, Nb_bytes);
 
 		
 }
