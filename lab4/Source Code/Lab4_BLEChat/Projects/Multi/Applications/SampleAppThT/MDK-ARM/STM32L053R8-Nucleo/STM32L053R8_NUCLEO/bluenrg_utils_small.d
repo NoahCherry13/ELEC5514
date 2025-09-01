@@ -1,7 +1,7 @@
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils_small.c
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h
-stm32l053r8_nucleo\bluenrg_utils_small.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l053r8_nucleo\bluenrg_utils_small.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_aci.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_aci_const.h
@@ -23,7 +23,7 @@ stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_utils.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\compiler.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h
-stm32l053r8_nucleo\bluenrg_utils_small.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32l053r8_nucleo\bluenrg_utils_small.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\Inc\stm32l0xx_hal_conf.h
@@ -38,7 +38,7 @@ stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\CMSIS\Includ
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-stm32l053r8_nucleo\bluenrg_utils_small.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32l053r8_nucleo\bluenrg_utils_small.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h
@@ -57,5 +57,5 @@ stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HA
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h
-stm32l053r8_nucleo\bluenrg_utils_small.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32l053r8_nucleo\bluenrg_utils_small.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32l053r8_nucleo\bluenrg_utils_small.o: ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h

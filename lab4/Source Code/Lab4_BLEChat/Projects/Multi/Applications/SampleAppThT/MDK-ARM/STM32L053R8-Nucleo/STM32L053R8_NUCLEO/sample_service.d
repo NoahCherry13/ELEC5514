@@ -8,14 +8,14 @@ stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Dri
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h
-stm32l053r8_nucleo\sample_service.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l053r8_nucleo\sample_service.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-stm32l053r8_nucleo\sample_service.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32l053r8_nucleo\sample_service.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h
@@ -34,7 +34,7 @@ stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Dri
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h
-stm32l053r8_nucleo\sample_service.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32l053r8_nucleo\sample_service.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h
@@ -42,7 +42,7 @@ stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_Blue
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h
-stm32l053r8_nucleo\sample_service.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32l053r8_nucleo\sample_service.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap_aci.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_aci.h
 stm32l053r8_nucleo\sample_service.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hci_const.h

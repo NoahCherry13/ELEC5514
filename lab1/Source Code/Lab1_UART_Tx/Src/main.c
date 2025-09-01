@@ -93,7 +93,7 @@ int main(void)
   MX_USART2_UART_Init();
 
 	/* USER CODE BEGIN 2 */
-    uint8_t message[] = "The University of Sydney\n";
+    uint8_t message[] = "The University of Sydney\r\n";
   
 	/* USER CODE END 2 */
 	
@@ -104,7 +104,7 @@ int main(void)
 	/* USER CODE END WHILE */
 	
   /* USER CODE BEGIN 3 */
-  HAL_UART_Transmit(&huart2, message, 26, 100)
+  HAL_UART_Transmit(&huart2, message, 27, 100);
 	
   }
 	/* USER CODE END 3 */

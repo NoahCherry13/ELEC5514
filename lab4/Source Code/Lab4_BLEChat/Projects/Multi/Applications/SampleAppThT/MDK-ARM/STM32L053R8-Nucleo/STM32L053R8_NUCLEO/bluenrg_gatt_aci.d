@@ -1,6 +1,6 @@
 stm32l053r8_nucleo\bluenrg_gatt_aci.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c
 stm32l053r8_nucleo\bluenrg_gatt_aci.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h
-stm32l053r8_nucleo\bluenrg_gatt_aci.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l053r8_nucleo\bluenrg_gatt_aci.o: C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 stm32l053r8_nucleo\bluenrg_gatt_aci.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h
 stm32l053r8_nucleo\bluenrg_gatt_aci.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h
 stm32l053r8_nucleo\bluenrg_gatt_aci.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h

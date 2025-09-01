@@ -195,8 +195,8 @@ void vcom_init(void)
  */
 int main(void)
 { 
-  uint8_t CLIENT_BDADDR[] = {0xbb, 0x00, 0x00, 0xE1, 0x80, 0x02}; //Set your Client Address
-  uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02}; //Set your Server Address
+  uint8_t CLIENT_BDADDR[] = {0xF1, 0x33, 0x01, 0xE1, 0x80, 0x22}; //Set your Client Address
+  uint8_t SERVER_BDADDR[] = {0xF1, 0x33, 0x01, 0xE1, 0x80, 0x03}; //Set your Server Address
   uint8_t bdaddr[BDADDR_SIZE];
   uint16_t service_handle, dev_name_char_handle, appearance_char_handle; 
   uint8_t  hwVersion;

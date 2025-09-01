@@ -1,7 +1,7 @@
 Dependencies for Project 'SampleAppThT', Target 'SampleApp_SERVER': (DO NOT MODIFY !)
-CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32l053xx.s)(0x57909F94)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-ID:\Keli_v5\ARM\CMSIS\Include-ID:\Packs\Keil\STM32L0xx_DFP\2.0.1\Device\Include--pd "__UVISION_VERSION SETA 531" --pd "STM32L053xx SETA 1"--list startup_stm32l053xx.lst --xref -o stm32l053r8_nucleo\startup_stm32l053xx.o --depend stm32l053r8_nucleo\startup_stm32l053xx.d)
-F (..\..\Src\bluenrg_interface.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_interface.o --omf_browse stm32l053r8_nucleo\bluenrg_interface.crf --depend stm32l053r8_nucleo\bluenrg_interface.d)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
+F (startup_stm32l053xx.s)(0x57909F94)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"--pd "__UVISION_VERSION SETA 540" --pd "STM32L053xx SETA 1"--list startup_stm32l053xx.lst --xref -o stm32l053r8_nucleo\startup_stm32l053xx.o --depend stm32l053r8_nucleo\startup_stm32l053xx.d)
+F (..\..\Src\bluenrg_interface.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_interface.o --omf_browse stm32l053r8_nucleo\bluenrg_interface.crf --depend stm32l053r8_nucleo\bluenrg_interface.d)
 I (..\..\Inc\bluenrg_interface.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
@@ -11,13 +11,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -36,20 +36,20 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\debug.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_list.h)(0x57909F92)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
-F (..\..\Src\clock.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\clock.o --omf_browse stm32l053r8_nucleo\clock.crf --depend stm32l053r8_nucleo\clock.d)
+F (..\..\Src\clock.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\clock.o --omf_browse stm32l053r8_nucleo\clock.crf --depend stm32l053r8_nucleo\clock.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_clock.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -63,7 +63,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -82,9 +82,9 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
-F (..\..\Src\cube_hal_l0.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\cube_hal_l0.o --omf_browse stm32l053r8_nucleo\cube_hal_l0.crf --depend stm32l053r8_nucleo\cube_hal_l0.d)
+F (..\..\Src\cube_hal_l0.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\cube_hal_l0.o --omf_browse stm32l053r8_nucleo\cube_hal_l0.crf --depend stm32l053r8_nucleo\cube_hal_l0.d)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -93,13 +93,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -118,9 +118,9 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
-F (..\..\Src\main.c)(0x64DA00F4)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\main.o --omf_browse stm32l053r8_nucleo\main.crf --depend stm32l053r8_nucleo\main.d)
+F (..\..\Src\main.c)(0x68B53F9D)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\main.o --omf_browse stm32l053r8_nucleo\main.crf --depend stm32l053r8_nucleo\main.d)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -129,13 +129,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -154,7 +154,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
@@ -164,7 +164,7 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\com
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hci_const.h)(0x57909F92)
@@ -181,7 +181,7 @@ I (..\..\Inc\role_type.h)(0x57909F94)
 I (..\..\Inc\uart_support.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_utils.h)(0x57909F92)
-F (..\..\Src\sample_service.c)(0x64D9FD5C)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\sample_service.o --omf_browse stm32l053r8_nucleo\sample_service.crf --depend stm32l053r8_nucleo\sample_service.d)
+F (..\..\Src\sample_service.c)(0x68B5429F)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\sample_service.o --omf_browse stm32l053r8_nucleo\sample_service.crf --depend stm32l053r8_nucleo\sample_service.d)
 I (..\..\Inc\sample_service.h)(0x5D848FB8)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
@@ -191,13 +191,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -216,7 +216,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x57909F92)
@@ -224,7 +224,7 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\com
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hci_const.h)(0x57909F92)
@@ -240,7 +240,7 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\deb
 I (..\..\Inc\role_type.h)(0x57909F94)
 I (..\..\Inc\uart_support.h)(0x57909F94)
 I (..\..\Inc\connection_config.h)(0x57909F94)
-F (..\..\Src\stm32xx_it.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32xx_it.o --omf_browse stm32l053r8_nucleo\stm32xx_it.crf --depend stm32l053r8_nucleo\stm32xx_it.d)
+F (..\..\Src\stm32xx_it.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32xx_it.o --omf_browse stm32l053r8_nucleo\stm32xx_it.crf --depend stm32l053r8_nucleo\stm32xx_it.d)
 I (..\..\Inc\stm32xx_it.h)(0x57909F94)
 I (..\..\Inc\cube_hal.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
@@ -250,13 +250,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -275,15 +275,15 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\debug.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
-F (..\..\Src\uart_support.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\uart_support.o --omf_browse stm32l053r8_nucleo\uart_support.crf --depend stm32l053r8_nucleo\uart_support.d)
-I (D:\Keli_v5\ARM\ARMCC\include\stdarg.h)(0x5EC759DC)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
+F (..\..\Src\uart_support.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\uart_support.o --omf_browse stm32l053r8_nucleo\uart_support.crf --depend stm32l053r8_nucleo\uart_support.d)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdarg.h)(0x5E8E20A2)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\link_layer.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
@@ -303,7 +303,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -322,10 +322,10 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\Inc\uart_support.h)(0x57909F94)
-F (..\..\Src\stm32l0xx_hal_msp.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_msp.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_msp.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_msp.d)
+F (..\..\Src\stm32l0xx_hal_msp.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_msp.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_msp.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_msp.d)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -334,13 +334,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -359,9 +359,9 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 F (..\..\readme.txt)(0x57909F94)()
-F (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.c)(0x57909F90)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_nucleo.o --omf_browse stm32l053r8_nucleo\stm32l0xx_nucleo.crf --depend stm32l053r8_nucleo\stm32l0xx_nucleo.d)
+F (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.c)(0x57909F90)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_nucleo.o --omf_browse stm32l053r8_nucleo\stm32l0xx_nucleo.crf --depend stm32l053r8_nucleo\stm32l0xx_nucleo.d)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -370,13 +370,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -394,8 +394,8 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
-F (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32_bluenrg_ble.o --omf_browse stm32l053r8_nucleo\stm32_bluenrg_ble.crf --depend stm32l053r8_nucleo\stm32_bluenrg_ble.d)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
+F (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32_bluenrg_ble.o --omf_browse stm32l053r8_nucleo\stm32_bluenrg_ble.crf --depend stm32l053r8_nucleo\stm32_bluenrg_ble.d)
 I (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -404,13 +404,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -429,19 +429,19 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\gp_timer.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_clock.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\debug.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
-F (..\..\Src\system_stm32l0xx.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\system_stm32l0xx.o --omf_browse stm32l053r8_nucleo\system_stm32l0xx.crf --depend stm32l053r8_nucleo\system_stm32l0xx.d)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
+F (..\..\Src\system_stm32l0xx.c)(0x57909F94)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\system_stm32l0xx.o --omf_browse stm32l053r8_nucleo\system_stm32l0xx.crf --depend stm32l053r8_nucleo\system_stm32l0xx.d)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
@@ -451,7 +451,7 @@ I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -469,7 +469,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal.crf --depend stm32l053r8_nucleo\stm32l0xx_hal.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal.crf --depend stm32l053r8_nucleo\stm32l0xx_hal.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -477,13 +477,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -501,7 +501,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_adc.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_adc.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_adc.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_adc.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_adc.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_adc.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -509,13 +509,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -533,7 +533,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -541,13 +541,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -565,7 +565,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cortex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_cortex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_cortex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_cortex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cortex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_cortex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_cortex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_cortex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -573,13 +573,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -597,7 +597,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dma.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_dma.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_dma.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_dma.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dma.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_dma.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_dma.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_dma.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -605,13 +605,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -629,7 +629,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_flash.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_flash.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_flash.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_flash.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_flash.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_flash.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -637,13 +637,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -661,7 +661,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -669,13 +669,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -693,7 +693,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_gpio.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_gpio.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_gpio.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_gpio.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_gpio.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_gpio.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_gpio.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_gpio.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -701,13 +701,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -725,7 +725,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_pwr.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_pwr.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_pwr.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_pwr.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_pwr.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_pwr.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -733,13 +733,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -757,7 +757,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -765,13 +765,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -789,7 +789,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_rcc.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_rcc.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_rcc.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_rcc.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_rcc.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_rcc.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -797,13 +797,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -821,7 +821,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -829,13 +829,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -853,7 +853,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_spi.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_spi.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_spi.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_spi.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_spi.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_spi.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_spi.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_spi.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -861,13 +861,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -885,7 +885,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_uart.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_uart.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_uart.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_uart.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_uart.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_uart.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -893,13 +893,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -917,7 +917,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.d)
+F (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart_ex.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.o --omf_browse stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.crf --depend stm32l053r8_nucleo\stm32l0xx_hal_uart_ex.d)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h)(0x57909F92)
@@ -925,13 +925,13 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h)(0x579
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -949,9 +949,9 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\hci.o --omf_browse stm32l053r8_nucleo\hci.crf --depend stm32l053r8_nucleo\hci.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\hci.o --omf_browse stm32l053r8_nucleo\hci.crf --depend stm32l053r8_nucleo\hci.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
@@ -975,7 +975,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -994,11 +994,11 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gap_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_gap_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_gap_aci.crf --depend stm32l053r8_nucleo\bluenrg_gap_aci.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gap_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_gap_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_gap_aci.crf --depend stm32l053r8_nucleo\bluenrg_gap_aci.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
@@ -1012,9 +1012,9 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\blu
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_gatt_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_gatt_aci.crf --depend stm32l053r8_nucleo\bluenrg_gatt_aci.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_gatt_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_gatt_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_gatt_aci.crf --depend stm32l053r8_nucleo\bluenrg_gatt_aci.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
@@ -1028,9 +1028,9 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\blu
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hal_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_hal_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_hal_aci.crf --depend stm32l053r8_nucleo\bluenrg_hal_aci.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hal_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_hal_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_hal_aci.crf --depend stm32l053r8_nucleo\bluenrg_hal_aci.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
@@ -1044,9 +1044,9 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\blu
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_hal_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_l2cap_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_l2cap_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_l2cap_aci.crf --depend stm32l053r8_nucleo\bluenrg_l2cap_aci.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_l2cap_aci.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_l2cap_aci.o --omf_browse stm32l053r8_nucleo\bluenrg_l2cap_aci.crf --depend stm32l053r8_nucleo\bluenrg_l2cap_aci.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
@@ -1060,10 +1060,10 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\blu
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_hal_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gap.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils_small.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_utils_small.o --omf_browse stm32l053r8_nucleo\bluenrg_utils_small.crf --depend stm32l053r8_nucleo\bluenrg_utils_small.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_utils_small.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_utils_small.o --omf_browse stm32l053r8_nucleo\bluenrg_utils_small.crf --depend stm32l053r8_nucleo\bluenrg_utils_small.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_aci_const.h)(0x57909F92)
@@ -1081,7 +1081,7 @@ I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\blu
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_updater_aci.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_utils.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -1095,7 +1095,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -1114,19 +1114,19 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x57909F90)
-I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x57909F90)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\Interface\bluenrg_itf_template.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_itf_template.o --omf_browse stm32l053r8_nucleo\bluenrg_itf_template.crf --depend stm32l053r8_nucleo\bluenrg_itf_template.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\Interface\bluenrg_itf_template.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\bluenrg_itf_template.o --omf_browse stm32l053r8_nucleo\bluenrg_itf_template.crf --depend stm32l053r8_nucleo\bluenrg_itf_template.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\Interface\bluenrg_itf_template.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\gp_timer.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\gp_timer.o --omf_browse stm32l053r8_nucleo\gp_timer.crf --depend stm32l053r8_nucleo\gp_timer.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\gp_timer.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\gp_timer.o --omf_browse stm32l053r8_nucleo\gp_timer.crf --depend stm32l053r8_nucleo\gp_timer.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_clock.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\gp_timer.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\ble_list.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\ble_list.o --omf_browse stm32l053r8_nucleo\ble_list.crf --depend stm32l053r8_nucleo\ble_list.d)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\ble_list.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\ble_list.o --omf_browse stm32l053r8_nucleo\ble_list.crf --depend stm32l053r8_nucleo\ble_list.d)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_list.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x57909F92)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x57909F94)
@@ -1140,7 +1140,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h)(0x57909F92)
@@ -1158,8 +1158,8 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h)(0x57
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart.h)(0x57909F92)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(0x57909F92)
-F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\osal.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="531" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\osal.o --omf_browse stm32l053r8_nucleo\osal.crf --depend stm32l053r8_nucleo\osal.d)
-I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x5EC759E4)
+F (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\osal.c)(0x57909F92)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DSERVER_ROLE-o stm32l053r8_nucleo\osal.o --omf_browse stm32l053r8_nucleo\osal.crf --depend stm32l053r8_nucleo\osal.d)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x57909F92)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x57909F92)
-I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x5EC759DC)
+I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E20A2)
