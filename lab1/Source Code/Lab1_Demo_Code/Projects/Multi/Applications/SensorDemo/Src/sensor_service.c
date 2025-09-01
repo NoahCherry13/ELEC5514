@@ -419,7 +419,7 @@ void setConnectable(void)
 {  
   tBleStatus ret;
   
-  const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','l','u','e','N','R','G'}; //Local Name
+  const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','L','E','_','L','O','C','_','G','1'}; //Local Name
   /* disable scan response */
   hci_le_set_scan_resp_data(0,NULL);
   PRINTF("General Discoverable Mode.\n");

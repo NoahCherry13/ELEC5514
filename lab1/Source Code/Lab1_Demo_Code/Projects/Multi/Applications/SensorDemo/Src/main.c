@@ -117,8 +117,8 @@ void User_Process(AxesRaw_t* p_axes);
  */
 int main(void)
 {
-  const char *name = "BlueNRG"; //Device Name
-  uint8_t SERVER_BDADDR[] = {0xFF, 0x33, 0x01, 0xE1, 0x80, 0x03}; //MAC Address
+  const char *name = "Dev1"; //Device Name
+  uint8_t SERVER_BDADDR[] = {0xF1, 0x33, 0x01, 0xE1, 0x80, 0x03}; //MAC Address
   uint8_t bdaddr[BDADDR_SIZE];
   uint16_t service_handle, dev_name_char_handle, appearance_char_handle;
   
