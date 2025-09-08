@@ -67,6 +67,7 @@ uint16_t tx_handle;
 uint16_t rx_handle;
 
 uint16_t sampleServHandle, TXCharHandle, RXCharHandle;
+uint16_t customServHandle, custTXHandle, custRXHandle;
 
 extern uint8_t bnrg_expansion_board;
 extern BLE_RoleTypeDef BLE_Role;
@@ -106,9 +107,9 @@ tBleStatus Add_Sample_Service(void)
   /*
      Remember you need to add a new service to realize the functions, you will lose marks if you use this sample service directly.
   */ 
-	const uint8_t service_uuid[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5d}; //Service
-  const uint8_t charUuidTX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
-  const uint8_t charUuidRX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
+	const uint8_t service_uuid[16] = {0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xaa,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5d}; //Service
+  const uint8_t charUuidTX[16] = {0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xbb,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
+  const uint8_t charUuidRX[16] = {0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xcc,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
 
   ret = aci_gatt_add_serv(UUID_TYPE_128, service_uuid, PRIMARY_SERVICE, 7, &sampleServHandle); 
   if (ret != BLE_STATUS_SUCCESS) goto fail;     
@@ -119,6 +120,36 @@ tBleStatus Add_Sample_Service(void)
                            16, 1, &RXCharHandle); //Use new handle when you create your service
   if (ret != BLE_STATUS_SUCCESS) goto fail; 
   PRINTF("Sample Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", TXCharHandle, RXCharHandle);
+  return BLE_STATUS_SUCCESS;  
+fail:
+  PRINTF("Error while adding Sample Service.\n");
+  return BLE_STATUS_ERROR ;
+}
+
+/**
+ * @brief  Add a custom service using a vendor specific profile
+ * @param  None
+ * @retval Status
+ */
+tBleStatus Add_Custom_Service(void)
+{
+  tBleStatus ret; 
+  /*
+     Remember you need to add a new service to realize the functions, you will lose marks if you use this sample service directly.
+  */ 
+	const uint8_t service_uuid[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5d}; //Service
+  const uint8_t charUuidTX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
+  const uint8_t charUuidRX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
+
+  ret = aci_gatt_add_serv(UUID_TYPE_128, service_uuid, PRIMARY_SERVICE, 7, &customServHandle); 
+  if (ret != BLE_STATUS_SUCCESS) goto fail;     
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidTX, 20, CHAR_PROP_NOTIFY, ATTR_PERMISSION_NONE, 0,
+                           16, 1, &custTXHandle); //Use new handle when you create your service
+  if (ret != BLE_STATUS_SUCCESS) goto fail; 
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidRX, 20, CHAR_PROP_WRITE|CHAR_PROP_WRITE_WITHOUT_RESP, ATTR_PERMISSION_NONE, GATT_NOTIFY_ATTRIBUTE_WRITE,
+                           16, 1, &custRXHandle); //Use new handle when you create your service
+  if (ret != BLE_STATUS_SUCCESS) goto fail; 
+  PRINTF("Sample Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", custTXHandle, custRXHandle);
   return BLE_STATUS_SUCCESS;  
 fail:
   PRINTF("Error while adding Sample Service.\n");
@@ -217,6 +248,14 @@ void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 	} 
 }
 
+void customFunction(uint8_t *data_buffer, uint8_t Nb_bytes){
+	
+	for(int i = 0; i < Nb_bytes; i++) {
+    PRINTF("%c", data_buffer[i]);
+	} 
+}
+
+
 /**
  * @brief  This function is used to send data related to the sample service
  *         (to be sent over the air to the remote board).
@@ -240,7 +279,7 @@ void sendData(uint8_t* data_buffer, uint8_t Nb_bytes)
         if(packets==0){
           PRINTF("Test start\n");
           time = Clock_Time();
-        }      
+        }
         
         struct timer t;
         Timer_Set(&t, CLOCK_SECOND*10); 
@@ -300,17 +339,22 @@ void enableNotification(void)
  */
 void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_data)
 {
+	PRINTF("Modified CB\n");
   if(handle == RXCharHandle + 1) //Use your handle
 	{
     receiveData(att_data, data_length);
 		/* User Code Here */
 	
-  } 
-	else if (handle == TXCharHandle + 2) //Use your handle
+  }
+	else if (handle == TXCharHandle + 1) //Use your handle
 	{        
     if(att_data[0] == 0x01)
       notification_enabled = TRUE;
   }
+	else if (handle == custRXHandle + 1){
+		receiveData(att_data, data_length);
+		customFunction(att_data, data_length);
+	}
 }
 
 /**

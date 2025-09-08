@@ -300,7 +300,14 @@ int main(void)
   if(BLE_Role == SERVER) 
 	{
     PRINTF("SERVER: BLE Stack Initialized\n");
-    //ret = Add_Sample_Service(); //Add your service here
+    ret = Add_Sample_Service(); //Add your service here
+    
+    if(ret == BLE_STATUS_SUCCESS)
+      PRINTF("Service added successfully.\n");
+    else
+      PRINTF("Error while adding service.\n");
+		
+		ret = Add_Custom_Service(); //Add your service here
     
     if(ret == BLE_STATUS_SUCCESS)
       PRINTF("Service added successfully.\n");
@@ -361,13 +368,25 @@ void User_Process(void)
     if(connected && notification_enabled){
       /* Send a toggle command to the remote device */
       uint8_t data[20] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J'};
-      sendData(data, sizeof(data));     
+      sendData(data, sizeof(data));
       //BSP_LED_Toggle(LED2);  // toggle the LED2 locally.
                                // If uncommented be sure BSP_LED_Init(LED2) is
                                // called in main().
                                // E.g. it can be enabled for debugging.
     }
   }
+
+	if (connected){
+		uint8_t message[RXBUFFERSIZE];
+		HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
+		if (!strcmp((char*) message, "")){
+			;
+		} else{
+			sendData(message, sizeof(message));	
+			PRINTF("%s\n", message);
+		}
+		memset(message, 0, RXBUFFERSIZE);
+	}
 }
 
 #ifdef USE_FULL_ASSERT
