@@ -328,6 +328,7 @@ int main(void)
 		 HCI_Process();
      User_Process();
 		
+		
   }
 }
 
@@ -361,15 +362,16 @@ void User_Process(void)
       enableNotification();
     }
   }  
-
-  if (connected && notification_enabled){
+	// PRINTF("%d %d\n", connected, notification_enabled);
+  if (connected){
     uint8_t message[21]; // 20 chars for data + 1 for null terminator
     uint16_t message_len = 0;
     
     // Set a short timeout so this call doesn't block the main loop
     HAL_StatusTypeDef result = HAL_UART_Receive(&UartHandle, message, 20, 100);
-
-    if (result == HAL_OK){
+		
+    // if (result == HAL_OK){
+		if (1) {
         // Null-terminate the string to be safe
         message[20] = '\0'; 
         
@@ -377,11 +379,14 @@ void User_Process(void)
         message_len = strlen((char*)message);
         
         // Only send if we received something
-        if (message_len > 0){
-            sendData(message, message_len);	
+        if (!strcmp((char*) message, "")){
+            
             // Optional: print the message you just sent to your own terminal
             // PRINTF("Sent: %s\n", message);
-        }
+        } else {
+					PRINTF("Sent: %s\n", message);
+					sendData(message, message_len);
+				}
     }
     
     // Clear the buffer for the next message
@@ -390,13 +395,12 @@ void User_Process(void)
 
   // Old code given in scaffold
 
-  /*
-  /* Check if the user has pushed the button */
+  // Check if the user has pushed the button
   if(BSP_PB_GetState(BUTTON_KEY) == RESET)
   {
     while (BSP_PB_GetState(BUTTON_KEY) == RESET);  
     if(connected && notification_enabled){
-      /* Send a toggle command to the remote device */
+      // Send a toggle command to the remote device
       uint8_t data[20] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J'};
       sendData(data, sizeof(data));
       //BSP_LED_Toggle(LED2);  // toggle the LED2 locally.
@@ -405,6 +409,8 @@ void User_Process(void)
                                // E.g. it can be enabled for debugging.
     }
   }
+	
+	/*
 
 	if (connected){
 		uint8_t message[RXBUFFERSIZE];
@@ -417,8 +423,7 @@ void User_Process(void)
 		}
 		memset(message, 0, RXBUFFERSIZE);
 	}
-
-    */
+	*/    
 }
 
 #ifdef USE_FULL_ASSERT

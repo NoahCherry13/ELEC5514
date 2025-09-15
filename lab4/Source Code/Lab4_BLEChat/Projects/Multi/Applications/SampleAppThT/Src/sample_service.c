@@ -149,10 +149,10 @@ tBleStatus Add_Custom_Service(void)
   ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidRX, 20, CHAR_PROP_WRITE|CHAR_PROP_WRITE_WITHOUT_RESP, ATTR_PERMISSION_NONE, GATT_NOTIFY_ATTRIBUTE_WRITE,
                            16, 1, &custRXHandle); //Use new handle when you create your service
   if (ret != BLE_STATUS_SUCCESS) goto fail; 
-  PRINTF("Sample Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", custTXHandle, custRXHandle);
+  PRINTF("Custom Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", custTXHandle, custRXHandle);
   return BLE_STATUS_SUCCESS;  
 fail:
-  PRINTF("Error while adding Sample Service.\n");
+  PRINTF("Error while adding Custom Service.\n");
   return BLE_STATUS_ERROR ;
 }
 
@@ -241,20 +241,18 @@ void startReadRXCharHandle(void)
  */
 void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 {
-  BSP_LED_Toggle(LED2);
-	
-	for(int i = 0; i < Nb_bytes; i++) {
-    PRINTF("%c", data_buffer[i]);
-	} 
+//  BSP_LED_Toggle(LED2);
+	// PRINTF("recieveData FUNCTION: ");
+	if (!strcmp((char*)data_buffer, "")){
+		;
+	} else{
+		for(int i = 0; i < Nb_bytes; i++) {
+			PRINTF("%c", data_buffer[i]);
+		} 
+		PRINTF("\n");
+	}
+	memcpy(data_buffer, 0, Nb_bytes);
 }
-
-void customFunction(uint8_t *data_buffer, uint8_t Nb_bytes){
-	
-	for(int i = 0; i < Nb_bytes; i++) {
-    PRINTF("%c", data_buffer[i]);
-	} 
-}
-
 
 /**
  * @brief  This function is used to send data related to the sample service
@@ -265,6 +263,7 @@ void customFunction(uint8_t *data_buffer, uint8_t Nb_bytes){
  */
 void sendData(uint8_t* data_buffer, uint8_t Nb_bytes)
 {
+	// PRINTF("In sendData\n");
   if(BLE_Role == SERVER) {
     
     if (throughput_test) {       
@@ -304,13 +303,15 @@ void sendData(uint8_t* data_buffer, uint8_t Nb_bytes)
       }while(1/*!test_end*/);
       
     } else {
-      aci_gatt_update_char_value(sampleServHandle,TXCharHandle, 0, Nb_bytes, data_buffer); //Use your handle
+			// PRINTF("TXHandle: %u\n", custTXHandle);
+      aci_gatt_update_char_value(customServHandle,custTXHandle, 0, Nb_bytes, data_buffer); //Use your handle
     }
 
-  } else {
-    aci_gatt_write_without_response(connection_handle, rx_handle+1, Nb_bytes, data_buffer);
-  }
-}
+  } else{
+			// PRINTF("RXHandle: %u\n", rx_handle);
+			aci_gatt_write_without_response(connection_handle,rx_handle+1, Nb_bytes, data_buffer);
+		}
+	}
 
 /**
  * @brief  Enable notification
@@ -339,11 +340,10 @@ void enableNotification(void)
  */
 void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_data)
 {
-	PRINTF("Modified CB\n");
+	  // PRINTF("In Modified CB\n");
     if(handle == custRXHandle + 1) { //Use your handle
         receiveData(att_data, data_length);
         /* User Code Here */
-        customFunction(att_data, data_length);
     } else if (handle == custTXHandle + 1) { //Use your handle      
         if(att_data[0] == 0x01)
         notification_enabled = TRUE;
