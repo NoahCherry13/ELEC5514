@@ -363,37 +363,22 @@ void User_Process(void)
     }
   }  
 	// PRINTF("%d %d\n", connected, notification_enabled);
-  if (connected){
-    uint8_t message[21]; // 20 chars for data + 1 for null terminator
-    uint16_t message_len = 0;
-    
-    // Set a short timeout so this call doesn't block the main loop
-    HAL_StatusTypeDef result = HAL_UART_Receive(&UartHandle, message, 20, 100);
-		
-    // if (result == HAL_OK){
-		if (1) {
-        // Null-terminate the string to be safe
-        message[20] = '\0'; 
-        
-        // Find the actual length of the received string
-        message_len = strlen((char*)message);
-        
+ 
+    if (connected){
+        uint8_t message[RXBUFFERSIZE];
+        HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
+            
         // Only send if we received something
         if (!strcmp((char*) message, "")){
-            
-            // Optional: print the message you just sent to your own terminal
-            // PRINTF("Sent: %s\n", message);
+            ;
         } else {
-					PRINTF("Sent: %s\n", message);
-					sendData(message, message_len);
-				}
-    }
-    
-    // Clear the buffer for the next message
-    memset(message, 0, sizeof(message));
-  }
+            // PRINTF("Sent: %s\n", message);
+            sendData(message, sizeof(message));
+        }
 
-  // Old code given in scaffold
+        // Clear the buffer for the next message
+        memset(message, 0, RXBUFFERSIZE);
+    }
 
   // Check if the user has pushed the button
   if(BSP_PB_GetState(BUTTON_KEY) == RESET)
@@ -409,21 +394,6 @@ void User_Process(void)
                                // E.g. it can be enabled for debugging.
     }
   }
-	
-	/*
-
-	if (connected){
-		uint8_t message[RXBUFFERSIZE];
-		HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
-		if (!strcmp((char*) message, "")){
-			;
-		} else{
-			sendData(message, sizeof(message));	
-			PRINTF("%s\n", message);
-		}
-		memset(message, 0, RXBUFFERSIZE);
-	}
-	*/    
 }
 
 #ifdef USE_FULL_ASSERT
