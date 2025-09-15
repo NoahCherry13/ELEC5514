@@ -210,11 +210,20 @@ void startReadRXCharHandle(void)
  */
 void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 {
-  BSP_LED_Toggle(LED2);
-	
-	for(int i = 0; i < Nb_bytes; i++) {
-    PRINTF("%c", data_buffer[i]);
-	} 
+  if( Nb_bytes == 1){
+    if ( data_buffer[0] == 49 ){
+      BSP_LED_Toggle(LED2);
+    }else if ( data_buffer[0] == 50 ){
+      BSP_LED_Toggle(LED2);
+    }else{
+      PRINTF("%c", data_buffer[0]);
+    }
+  }else{
+    for(int i = 0; i < Nb_bytes; i++) {
+      PRINTF("%c", data_buffer[i]);
+	  } 
+  }
+
 }
 
 /**

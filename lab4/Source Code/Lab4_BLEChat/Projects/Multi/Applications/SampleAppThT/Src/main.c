@@ -367,6 +367,8 @@ void User_Process(void)
                                // E.g. it can be enabled for debugging.
     }
   }
+  HAL_UART_Receive(&UartHandle, message, 20, 100);
+  sendData(message, sizeof(message));
 }
 
 #ifdef USE_FULL_ASSERT
