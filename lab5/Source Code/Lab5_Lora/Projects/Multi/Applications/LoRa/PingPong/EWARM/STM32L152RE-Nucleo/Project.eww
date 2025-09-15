@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Lora.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>compil_L1</name>
+      <member>
+        <project>Lora</project>
+        <configuration>LRWAN-NS1</configuration>
+      </member>
+      <member>
+        <project>Lora</project>
+        <configuration>sx1272mb2das</configuration>
+      </member>
+      <member>
+        <project>Lora</project>
+        <configuration>sx1276mb1las</configuration>
+      </member>
+      <member>
+        <project>Lora</project>
+        <configuration>sx1276mb1mas</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
