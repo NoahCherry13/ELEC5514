@@ -340,21 +340,14 @@ void enableNotification(void)
 void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_data)
 {
 	PRINTF("Modified CB\n");
-  if(handle == RXCharHandle + 1) //Use your handle
-	{
-    receiveData(att_data, data_length);
-		/* User Code Here */
-	
-  }
-	else if (handle == TXCharHandle + 1) //Use your handle
-	{        
-    if(att_data[0] == 0x01)
-      notification_enabled = TRUE;
-  }
-	else if (handle == custRXHandle + 1){
-		receiveData(att_data, data_length);
-		customFunction(att_data, data_length);
-	}
+    if(handle == custRXHandle + 1) { //Use your handle
+        receiveData(att_data, data_length);
+        /* User Code Here */
+        customFunction(att_data, data_length);
+    } else if (handle == custTXHandle + 1) { //Use your handle      
+        if(att_data[0] == 0x01)
+        notification_enabled = TRUE;
+    }
 }
 
 /**
