@@ -242,7 +242,7 @@ void startReadRXCharHandle(void)
 void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 {
 //  BSP_LED_Toggle(LED2);
-	// PRINTF("recieveData FUNCTION: ");
+	PRINTF("recieveData FUNCTION: \n");
 	if (!strcmp((char*)data_buffer, "")){
 		;
 	} else{
