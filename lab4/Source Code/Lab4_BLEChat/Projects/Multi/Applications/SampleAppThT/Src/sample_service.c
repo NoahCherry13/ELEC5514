@@ -280,6 +280,7 @@ void sendData(uint8_t* data_buffer, uint8_t Nb_bytes)
   } else {
     aci_gatt_write_without_response(connection_handle, rx_handle+1, Nb_bytes, data_buffer);
   }
+	PRINTF("SENDING %d Bytes!\n", Nb_bytes);
 }
 
 /**
@@ -309,11 +310,16 @@ void enableNotification(void)
  */
 void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_data)
 {
+	PRINTF("IN CB\n");
   if(handle == RXCharHandle + 1) //Use your handle
 	{
     receiveData(att_data, data_length);
 		/* User Code Here */
-	
+		if(data_length == 1 && att_data[0] == '1'){
+			BSP_LED_On(LED2);
+		}else if (data_length == 1 && att_data[0] == '2'){
+			BSP_LED_Off(LED2);
+		}
   } 
 	else if (handle == TXCharHandle + 2) //Use your handle
 	{        

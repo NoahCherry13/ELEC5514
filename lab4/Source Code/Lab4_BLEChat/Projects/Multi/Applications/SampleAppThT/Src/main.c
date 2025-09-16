@@ -314,11 +314,19 @@ int main(void)
   /* Set output power level */
   ret = aci_hal_set_tx_power_level(1,4);
 	
-  while(1)
+	uint8_t msg[30];
+  
+	while(1)
   {
 		/* User Code Here */	
-		 HCI_Process();
-     User_Process();
+		memset(msg, 0, sizeof(msg));
+		HAL_UART_Receive(&UartHandle, msg, sizeof(msg), 100);
+		//PRINTF("%s\n", (char*)msg);
+		sendData(msg, sizeof(msg));
+		HCI_Process();
+		User_Process();
+		HCI_Process();
+		User_Process();
 		
   }
 }
@@ -367,8 +375,7 @@ void User_Process(void)
                                // E.g. it can be enabled for debugging.
     }
   }
-  HAL_UART_Receive(&UartHandle, message, 20, 100);
-  sendData(message, sizeof(message));
+
 }
 
 #ifdef USE_FULL_ASSERT
