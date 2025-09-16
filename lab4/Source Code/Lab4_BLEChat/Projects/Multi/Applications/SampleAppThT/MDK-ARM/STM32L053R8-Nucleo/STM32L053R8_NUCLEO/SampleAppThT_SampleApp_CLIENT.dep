@@ -120,7 +120,7 @@ I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_usart_ex.h)(
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.h)(0x68C8F32A)
 I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x68C8F32A)
-F (..\..\Src\main.c)(0x68C8FB8E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DCLIENT_ROLE-o stm32l053r8_nucleo\main.o --omf_browse stm32l053r8_nucleo\main.crf --depend stm32l053r8_nucleo\main.d)
+F (..\..\Src\main.c)(0x68C90958)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DCLIENT_ROLE-o stm32l053r8_nucleo\main.o --omf_browse stm32l053r8_nucleo\main.crf --depend stm32l053r8_nucleo\main.d)
 I (..\..\Inc\cube_hal.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x68C8F32B)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x68C8F32B)
@@ -158,7 +158,7 @@ I (C:\KEIL_V5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E20A2)
 I (..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.h)(0x68C8F32A)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\osal.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h)(0x68C8F32B)
-I (..\..\Inc\sample_service.h)(0x68C8F32B)
+I (..\..\Inc\sample_service.h)(0x68C90480)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_gatt_server.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\compiler.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\ble_status.h)(0x68C8F32B)
@@ -181,8 +181,8 @@ I (..\..\Inc\role_type.h)(0x68C8F32B)
 I (..\..\Inc\uart_support.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h)(0x68C8F32A)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\bluenrg_utils.h)(0x68C8F32B)
-F (..\..\Src\sample_service.c)(0x68C8FA89)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DCLIENT_ROLE-o stm32l053r8_nucleo\sample_service.o --omf_browse stm32l053r8_nucleo\sample_service.crf --depend stm32l053r8_nucleo\sample_service.d)
-I (..\..\Inc\sample_service.h)(0x68C8F32B)
+F (..\..\Src\sample_service.c)(0x68C909F7)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\Inc -I ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include -I ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo -I ..\..\..\..\..\..\Drivers\BSP\X-NUCLEO-IDB04A1 -I ..\..\..\..\..\..\Drivers\CMSIS\Include -D__UVISION_VERSION="540" -DSTM32L053xx -DSTM32L053xx -DUSE_STM32L0XX_NUCLEO -DUSE_HAL_DRIVER -DCLIENT_ROLE-o stm32l053r8_nucleo\sample_service.o --omf_browse stm32l053r8_nucleo\sample_service.crf --depend stm32l053r8_nucleo\sample_service.d)
+I (..\..\Inc\sample_service.h)(0x68C90480)
 I (..\..\Inc\cube_hal.h)(0x68C8F32B)
 I (..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h)(0x68C8F32B)
 I (..\..\Inc\stm32l0xx_hal_conf.h)(0x68C8F32B)

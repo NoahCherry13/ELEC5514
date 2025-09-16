@@ -67,6 +67,7 @@ uint16_t tx_handle;
 uint16_t rx_handle;
 
 uint16_t sampleServHandle, TXCharHandle, RXCharHandle;
+uint16_t customServHandle, CustTXHandle, CustRXHandle;
 
 extern uint8_t bnrg_expansion_board;
 extern BLE_RoleTypeDef BLE_Role;
@@ -125,6 +126,33 @@ fail:
   return BLE_STATUS_ERROR ;
 }
 
+tBleStatus Add_Custom_Service(void)
+{
+  tBleStatus ret; 
+	
+  const uint8_t service_uuid[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5d}; //Service
+  const uint8_t charUuidTX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Characteristics
+  const uint8_t charUuidRX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f};
+  
+  ret = aci_gatt_add_serv(UUID_TYPE_128, service_uuid, PRIMARY_SERVICE, 7, &customServHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;    
+  
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidTX, 20, CHAR_PROP_NOTIFY, ATTR_PERMISSION_NONE, 0,
+                           16, 1, &CustTXHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+  
+  ret =  aci_gatt_add_char(customServHandle, UUID_TYPE_128, charUuidRX, 20, CHAR_PROP_WRITE|CHAR_PROP_WRITE_WITHOUT_RESP, ATTR_PERMISSION_NONE, GATT_NOTIFY_ATTRIBUTE_WRITE,
+                           16, 1, &CustRXHandle);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+  
+  PRINTF("Custom Service added.\nTX Char Handle %04X, RX Char Handle %04X\n", CustTXHandle, CustRXHandle);
+  return BLE_STATUS_SUCCESS; 
+  
+fail:
+  PRINTF("Error while adding Custom Service.\n");
+  return BLE_STATUS_ERROR ;
+}
+
 /**
  * @brief  Make the device connectable
  * @param  None 
@@ -178,7 +206,7 @@ void startReadTXCharHandle(void)
   {    
     PRINTF("Start reading TX Char Handle\n");
     
-    const uint8_t charUuid128_TX[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe1,0xf2,0x73,0xd9}; //Use your UUID
+    const uint8_t charUuid128_TX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5e}; //Use your UUID
     aci_gatt_disc_charac_by_uuid(connection_handle, 0x0001, 0xFFFF, UUID_TYPE_128, charUuid128_TX);
     start_read_tx_char_handle = TRUE;
   }
@@ -195,7 +223,7 @@ void startReadRXCharHandle(void)
   {
     PRINTF("Start reading RX Char Handle\n");
     
-    const uint8_t charUuid128_RX[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe2,0xf2,0x73,0xd9}; //Use your UUID
+    const uint8_t charUuid128_RX[16] = {0x1b,0xc5,0xd5,0xa5,0x02,0x00,0xb4,0x9a,0xe1,0x11,0x3a,0xcf,0x80,0x6e,0x36,0x5f}; //Use your UUID
     aci_gatt_disc_charac_by_uuid(connection_handle, 0x0001, 0xFFFF, UUID_TYPE_128, charUuid128_RX);
     start_read_rx_char_handle = TRUE;
   }
@@ -210,19 +238,9 @@ void startReadRXCharHandle(void)
  */
 void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 {
-  if( Nb_bytes == 1){
-    if ( data_buffer[0] == 49 ){
-      BSP_LED_Toggle(LED2);
-    }else if ( data_buffer[0] == 50 ){
-      BSP_LED_Toggle(LED2);
-    }else{
-      PRINTF("%c", data_buffer[0]);
-    }
-  }else{
-    for(int i = 0; i < Nb_bytes; i++) {
-      PRINTF("%c", data_buffer[i]);
-	  } 
-  }
+	for(int i = 0; i < Nb_bytes; i++) {
+		PRINTF("%c", data_buffer[i]);
+	} 
 
 }
 
@@ -274,13 +292,12 @@ void sendData(uint8_t* data_buffer, uint8_t Nb_bytes)
       }while(1/*!test_end*/);
       
     } else {
-      aci_gatt_update_char_value(sampleServHandle,TXCharHandle, 0, Nb_bytes, data_buffer); //Use your handle
+      aci_gatt_update_char_value(customServHandle,CustTXHandle, 0, Nb_bytes, data_buffer); //Use your handle
     }
 
   } else {
     aci_gatt_write_without_response(connection_handle, rx_handle+1, Nb_bytes, data_buffer);
   }
-	PRINTF("SENDING %d Bytes!\n", Nb_bytes);
 }
 
 /**
@@ -313,6 +330,7 @@ void Attribute_Modified_CB(uint16_t handle, uint8_t data_length, uint8_t *att_da
 	PRINTF("IN CB\n");
   if(handle == RXCharHandle + 1) //Use your handle
 	{
+		PRINTF("RECEIVED DATA\n");
     receiveData(att_data, data_length);
 		/* User Code Here */
 		if(data_length == 1 && att_data[0] == '1'){

@@ -300,7 +300,7 @@ int main(void)
   if(BLE_Role == SERVER) 
 	{
     PRINTF("SERVER: BLE Stack Initialized\n");
-    //ret = Add_Sample_Service(); //Add your service here
+		ret = Add_Custom_Service(); //Add your service here
     
     if(ret == BLE_STATUS_SUCCESS)
       PRINTF("Service added successfully.\n");
@@ -316,15 +316,14 @@ int main(void)
 	
 	uint8_t msg[30];
   
+	
 	while(1)
   {
 		/* User Code Here */	
 		memset(msg, 0, sizeof(msg));
 		HAL_UART_Receive(&UartHandle, msg, sizeof(msg), 100);
-		//PRINTF("%s\n", (char*)msg);
+		PRINTF("%s\n", (char*)msg);
 		sendData(msg, sizeof(msg));
-		HCI_Process();
-		User_Process();
 		HCI_Process();
 		User_Process();
 		
