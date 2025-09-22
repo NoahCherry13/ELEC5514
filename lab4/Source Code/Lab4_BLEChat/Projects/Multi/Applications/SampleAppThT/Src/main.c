@@ -373,7 +373,7 @@ void User_Process(void)
             ;
         } else {
             // PRINTF("Sent: %s\n", message);
-            sendData(message, sizeof(message));
+            sendData(message, strlen((char*)message));
         }
 
         // Clear the buffer for the next message

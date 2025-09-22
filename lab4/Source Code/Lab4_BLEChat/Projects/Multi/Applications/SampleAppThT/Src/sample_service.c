@@ -242,16 +242,27 @@ void startReadRXCharHandle(void)
 void receiveData(uint8_t *data_buffer, uint8_t Nb_bytes)
 {
 //  BSP_LED_Toggle(LED2);
-	PRINTF("recieveData FUNCTION: \n");
+	// PRINTF("recieveData FUNCTION: \n");
 	if (!strcmp((char*)data_buffer, "")){
 		;
 	} else{
-		for(int i = 0; i < Nb_bytes; i++) {
-			PRINTF("%c", data_buffer[i]);
-		} 
-		PRINTF("\n");
+		if (Nb_bytes == 1){
+			if (data_buffer[0] == '1'){
+				BSP_LED_On(LED2);
+			} else if (data_buffer[0] == '2'){
+				BSP_LED_Off(LED2);
+			} else{
+				for(int i = 0; i < Nb_bytes; i++) {
+					PRINTF("%c", data_buffer[i]);
+				}
+			}
+		} else {
+				for(int i = 0; i < Nb_bytes; i++) {
+						PRINTF("%c", data_buffer[i]);
+			}
+			PRINTF("\n");
+		}
 	}
-	memcpy(data_buffer, 0, Nb_bytes);
 }
 
 /**
