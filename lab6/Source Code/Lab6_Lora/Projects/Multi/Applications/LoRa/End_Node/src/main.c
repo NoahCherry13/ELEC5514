@@ -66,6 +66,7 @@ Maintainer: Miguel Luis, Gregory Cristian and Wael Guibene
 #include "timeServer.h"
 #include "vcom.h"
 #include "version.h"
+#include <stdlib.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -183,7 +184,11 @@ int main( void )
     }
     ENABLE_IRQ();   
     /* USER CODE BEGIN */
-
+		lora_AppData_t *lora_data = (lora_AppData_t *)malloc(sizeof(lora_AppData_t));
+		char msg[] = "Group1";
+		lora_data->Buff = (uint8_t*)msg;
+		lora_data->BuffSize = strlen(msg);
+		LoraTxData(lora_data, NULL);
     /* USER CODE END */
   }
 }

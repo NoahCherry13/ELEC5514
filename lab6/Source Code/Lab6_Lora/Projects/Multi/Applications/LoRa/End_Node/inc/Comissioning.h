@@ -93,7 +93,7 @@ Maintainer: Miguel Luis and Gregory Cristian
  *
  * \remark see STATIC_DEVICE_EUI comments
  */
-#define LORAWAN_DEVICE_EUI                          { 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01 }  //Use your own EUI
+#define LORAWAN_DEVICE_EUI                          { 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01 }  //Use your own EUI
 
 /*!
  * Application IEEE EUI (big endian)
