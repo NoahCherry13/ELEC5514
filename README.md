@@ -9,3 +9,4 @@
 - **Lab 3:** BLE Service and Commands
 - **Lab 4:** BLE Real-time Communications
 - **Lab 5:** LoRaWAN and Gateway
+- **Lab 6:** LoRa Communications
