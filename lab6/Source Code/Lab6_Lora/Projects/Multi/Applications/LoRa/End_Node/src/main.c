@@ -81,6 +81,7 @@ Maintainer: Miguel Luis, Gregory Cristian and Wael Guibene
 #define LPP_DATATYPE_BAROMETER      0x73
 
 #define LPP_APP_PORT 99
+#define RXBUFFERSIZE 3
 
 /*!
  * Defines the application data transmission duty cycle. 5s, value in [ms].
@@ -124,6 +125,7 @@ static LoRaMainCallback_t LoRaMainCallbacks ={ HW_GetBatteryLevel,
  * Specifies the state of the application LED
  */
 static uint8_t AppLedStateOn = RESET;
+static uint8_t state = 0;
 
 UART_HandleTypeDef UartHandle;
 #ifdef USE_B_L072Z_LRWAN1
@@ -145,6 +147,40 @@ static  LoRaParam_t LoRaParamInit= {TX_ON_TIMER,
 
 /* Private functions ---------------------------------------------------------*/
 
+/** 
+* @brief  Init the VCOM.
+* @param  None
+* @return None
+*/
+void vcom_init(void)
+{
+  /*## Configure the UART peripheral ######################################*/
+  /* Put the USART peripheral in the Asynchronous mode (UART Mode) */
+  /* UART1 configured as follow:
+      - Word Length = 8 Bits
+      - Stop Bit = One Stop bit
+      - Parity = ODD parity
+      - BaudRate = 9600 baud
+      - Hardware flow control disabled (RTS and CTS signals) */
+  UartHandle.Instance        = USARTX;
+  UartHandle.Init.BaudRate   = 115200;
+  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
+  UartHandle.Init.StopBits   = UART_STOPBITS_1;
+  UartHandle.Init.Parity     = UART_PARITY_NONE;
+  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+  UartHandle.Init.Mode       = UART_MODE_TX_RX;
+  
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
+  {
+    /* Initialization Error */
+    Error_Handler(); 
+  }
+	
+	HAL_NVIC_SetPriority(USARTX_IRQn, 0x1, 0);
+  HAL_NVIC_EnableIRQ(USARTX_IRQn);
+}
+
+
 /**
   * @brief  Main program
   * @param  None
@@ -153,20 +189,19 @@ static  LoRaParam_t LoRaParamInit= {TX_ON_TIMER,
 int main( void )
 {
   /* STM32 HAL library initialization*/
-  HAL_Init( );
+  HAL_Init();
   
   /* Configure the system clock*/
-  SystemClock_Config( );
+  SystemClock_Config();
+	
+	/* Initialize the VCOM interface */
+  vcom_init();
   
   /* Configure the debug mode*/
-  DBG_Init( );
+  DBG_Init();
   
   /* Configure the hardware*/
-  HW_Init( );
-	
-	/* Initialize Serial Port */
-  vcom_Init();
-	HAL_UART_Init(&UartHandle);
+  HW_Init();
 	
   /* Configure the Lora Stack*/
   lora_Init( &LoRaMainCallbacks, &LoRaParamInit);
@@ -174,27 +209,58 @@ int main( void )
   PRINTF("VERSION: %X\n\r", VERSION);
   
   /* main loop*/
-  while( 1 )
-  {
-    /* run the LoRa class A state machine*/
-    //lora_fsm( );
-	  uint8_t message[10];
-		HAL_UART_Receive(&UartHandle, message, 10, 100);
-		PRINTF("%c", message[0]);
-    DISABLE_IRQ( );
-    /* if an interrupt has occurred after DISABLE_IRQ, it is kept pending 
-     * and cortex will not enter low power anyway  */
-    if ( lora_getDeviceState( ) == DEVICE_STATE_SLEEP )
-    {
-#ifndef LOW_POWER_DISABLE
-      LowPower_Handler( );
-#endif
-    }
-    ENABLE_IRQ();   
-    /* USER CODE BEGIN */
+	while(1)
+	{
+		while(state == 0)
+		{
+			lora_fsm();
+			DISABLE_IRQ();
+			
+			if ( lora_getDeviceState( ) == DEVICE_STATE_SLEEP )
+			{
+				#ifndef LOW_POWER_DISABLE
+							LowPower_Handler( );
+				#endif
+			}
+			
+			state = 1;
+		}
+		
+		while(state == 1)
+		{
+			/* run the LoRa class A state machine*/
+			// lora_fsm( );
 
-    /* USER CODE END */
-  }
+			//;
+			/* if an interrupt has occurred after DISABLE_IRQ, it is kept pending 
+			 * and cortex will not enter low power anyway  */
+			PRINTF("Message\n");
+			PRINTF("UART state: %d\n", UartHandle.RxState);
+			
+			static uint8_t message[RXBUFFERSIZE];
+			HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
+			PRINTF("Here\n");
+
+			PRINTF("%s", message);
+			// Only send if we received something
+			if (!strcmp((char*) message, "")){
+					// PRINTF("No message\n");
+					;
+			} else {
+					PRINTF("Sent: %s\n", message);
+			}
+
+			// Clear the buffer for the next message
+			memset(message, 0, RXBUFFERSIZE);
+			
+			ENABLE_IRQ();   
+			/* USER CODE BEGIN */
+
+			/* USER CODE END */
+		}
+	}
+	
+	
 }
 
 static void LoraTxData( lora_AppData_t *AppData, FunctionalState* IsTxConfirmed)
