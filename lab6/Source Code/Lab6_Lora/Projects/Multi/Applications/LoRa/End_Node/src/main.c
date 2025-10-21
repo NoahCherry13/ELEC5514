@@ -180,6 +180,8 @@ void vcom_init(void)
   HAL_NVIC_EnableIRQ(USARTX_IRQn);
 }
 
+// Global message var for LoRa Tx
+static uint8_t message[RXBUFFERSIZE];
 
 /**
   * @brief  Main program
@@ -208,56 +210,27 @@ int main( void )
   
   PRINTF("VERSION: %X\n\r", VERSION);
   
+	int uart_ready = 0;
+
+	while (!uart_ready){
+			HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
+			if (message[0] != 0){
+					uart_ready = !uart_ready;
+			}
+	}
   /* main loop*/
 	while(1)
 	{
-		while(state == 0)
-		{
-			lora_fsm();
-			DISABLE_IRQ();
-			
-			if ( lora_getDeviceState( ) == DEVICE_STATE_SLEEP )
-			{
-				#ifndef LOW_POWER_DISABLE
-							LowPower_Handler( );
-				#endif
-			}
-			
-			state = 1;
-		}
+		lora_fsm();
+		DISABLE_IRQ();
 		
-		while(state == 1)
+		if ( lora_getDeviceState( ) == DEVICE_STATE_SLEEP )
 		{
-			/* run the LoRa class A state machine*/
-			// lora_fsm( );
-
-			//;
-			/* if an interrupt has occurred after DISABLE_IRQ, it is kept pending 
-			 * and cortex will not enter low power anyway  */
-			PRINTF("Message\n");
-			PRINTF("UART state: %d\n", UartHandle.RxState);
-			
-			static uint8_t message[RXBUFFERSIZE];
-			HAL_UART_Receive(&UartHandle, message, RXBUFFERSIZE, 100);
-			PRINTF("Here\n");
-
-			PRINTF("%s", message);
-			// Only send if we received something
-			if (!strcmp((char*) message, "")){
-					// PRINTF("No message\n");
-					;
-			} else {
-					PRINTF("Sent: %s\n", message);
-			}
-
-			// Clear the buffer for the next message
-			memset(message, 0, RXBUFFERSIZE);
-			
-			ENABLE_IRQ();   
-			/* USER CODE BEGIN */
-
-			/* USER CODE END */
+			#ifndef LOW_POWER_DISABLE
+						LowPower_Handler( );
+			#endif
 		}
+		ENABLE_IRQ();   
 	}
 	
 	
@@ -266,12 +239,11 @@ int main( void )
 static void LoraTxData( lora_AppData_t *AppData, FunctionalState* IsTxConfirmed)
 {
   AppData->Port = LPP_APP_PORT; 
-	char msg[] = "Group1";
-	for (int i = 0; i < strlen(msg); i++){
-		AppData->Buff[i] = msg[i];
+	for (int i = 0; i < RXBUFFERSIZE; i++){
+		AppData->Buff[i] = message[i];
 	}
 	//AppData->Buff = (uint8_t*)msg;
-	AppData->BuffSize = strlen(msg);
+	AppData->BuffSize = RXBUFFERSIZE;
   //*IsTxConfirmed =  LORAWAN_CONFIRMED_MSG;
 }
     
